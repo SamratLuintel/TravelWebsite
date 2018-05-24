@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style/index/style.css">
     <link rel="stylesheet" href="libraries/noUiSlider/noUiSliderChg.css">
     <link rel="stylesheet" href="libraries/datepicker/pikaday.css">
+    <link rel="stylesheet" href="style/index/responsive.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <title>This is running</title>
 </head>
@@ -27,14 +28,14 @@
     <div class="header">
         <div class="container">
             <div class="header-top">
-                <div class="row">
-                    <div class="col-md-8">
+                <div class="row justify-content-between separator">
+                    <div class="contact-us-section">
                         <div class="call-to-action">
                             <span>Contact Us</span>
                             : <i class="fas fa-phone"></i> +9999587801 (Sunday - Friday : 9:00am - 5:00pm)
                         </div>
                     </div>
-                    <div class="col-md-4 d-flex justify-content-end">
+                    <div class="social-section d-flex justify-content-end">
                         <div class="social-icons">
                             <ul>
                                 <li><i class="fab fa-facebook-f"></i></li>
@@ -49,18 +50,18 @@
                     </div>
                 </div>
             </div>
-            <hr>
+  
             <div class="main-area">
-                <div class="row">
-                    <div class="col-md-3">
+                <div class="row d-flex justify-content-between mt-md-4">
+                    <div class="brand-area">
                         <div class="brand">
                             <div class="brand-name">
                                 MountainTravel
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-9">
-                        <div class="basic-menu f-right">
+                    <div class="navbar-area">
+                        <div class="basic-menu d-flex justify-content-end">
                             <div id="mobile-menu">
                                 <ul>
                                     <li>
@@ -93,9 +94,9 @@
                                     <li>
                                         <a href="#">Contact</a>
                                     </li>
-                                    <span class="open-slider"><i class="fas fa-bars" onclick="OpenSlideMenu()"></i></span>
                                 </ul>
                             </div>
+                            <span id="open-slider"><i class="fas fa-bars" onclick="OpenSlideMenu()"></i></span>
                         </div>
                     </div>
                 </div>
@@ -194,35 +195,35 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="single-feature-item d-md-flex">
+                    <div class="single-feature-item d-md-flex flex-md-row flex-sm-column">
                         <div class="image px-3">
-                            <img src="photos/icon/tower.png" alt="">
+                            <img class="d-block mx-auto" src="photos/icon/tower.png" alt="">
                         </div>
-                        <div class="feature-content">
+                        <div class="feature-content d-flex flex-column align-items-center align-items-md-start mt-3 mt-md-0">
                             <h4>DESTINATION</h4>
-                            <p>We denounce with righteous more</p>
+                            <p class="text-secondary text-center">We denounce with righteous more</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="single-feature-item d-md-flex">
+                    <div class="single-feature-item d-md-flex flex-md-row flex-sm-column">
                         <div class="image px-3">
-                            <img src="photos/icon/rate.png" alt="">
+                            <img class="d-block mx-auto" src="photos/icon/rate.png" alt="">
                         </div>
-                        <div class="feature-content">
+                        <div class="feature-content d-flex flex-column align-items-center align-items-md-start mt-3 mt-md-0">
                             <h4>TOP PLACE</h4>
-                            <p>We denounce with righteous more</p>
+                            <p class="text-secondary text-center">We denounce with righteous more</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="single-feature-item d-md-flex">
+                    <div class="single-feature-item d-md-flex flex-md-row flex-sm-column">
                         <div class="image px-3">
-                            <img src="photos/icon/notebook.png" alt="">
+                            <img class="d-block mx-auto" src="photos/icon/notebook.png" alt="">
                         </div>
-                        <div class="feature-content">
+                        <div class="feature-content d-flex flex-column align-items-center align-items-md-start mt-3 mt-md-0">
                             <h4>BOOKING NOW</h4>
-                            <p>We denounce with righteous more</p>
+                            <p class="text-secondary text-center">We denounce with righteous more</p>
                         </div>
                     </div>
                 </div>
@@ -236,7 +237,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="home-service-img">
-                        <img src="photos/service.png" alt="">
+                        <img class="d-block mx-auto"src="photos/service.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -247,7 +248,7 @@
                             We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms 
                             of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs.
                         </p>
-                        <ul class="service-list">
+                        <ul class="service-list d-flex flex-column d-md-block">
                             <li><i class="fas fa-arrow-right"></i> First Class Flights</li>
                             <li><i class="fas fa-arrow-right"></i> City Tours</li>
                             <li><i class="fas fa-arrow-right"></i> Holiday and Seasonal Tours</li>
@@ -270,6 +271,7 @@
         <div class="bg-overlay">
             <div class="container">
                 <div class="video-content text-center">
+                    <p class="text-center"><i class="fas fa-play-circle"></i></p>
                     <h3>INTRO SNOW MOUNTAIN</h3>
                 </div>
             </div>
@@ -296,7 +298,7 @@
                             Since, 1995 We denounce with righteous indignation and dislike men who are so beguiled and 
                             demoralized by the charms of pleasure of the moment, so blinded by desire.
                         </p>
-                        <ul class="destination-feature">
+                        <ul class="destination-feature d-flex flex-column d-md-block">
                             <li> <i class="fas fa-arrow-right"></i> 5 Days, 4 Night</li>
                             <li> <i class="fas fa-arrow-right"></i> 5 Star Accomodations</li>
                             <li> <i class="fas fa-arrow-right"></i> Handpicked Hotels</li>
@@ -318,7 +320,7 @@
 
     <!-- 9.Popular Packages -->
     <section id="popular-packages">
-        <div class="bg-overlay">
+            <div class="bg-overlay"></div>
             <div class="container">
                 <div class="heading text-center mb-5">
                     <h2>POPULAR PACKAGES</h2>
@@ -326,7 +328,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="single-package-item">
+                        <div class="single-package-item mb-5">
                             <div class="image-section">
                                 <img src="photos/package/pack-1.jpg" alt="">
                                 <div class="package-cost">$3000</div>
@@ -342,7 +344,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="single-package-item">
+                        <div class="single-package-item mb-5">
                             <div class="image-section">
                                 <img src="photos/package/pack-2.jpg" alt="">
                                 <div class="package-cost">$4000</div>
@@ -358,7 +360,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="single-package-item">
+                        <div class="single-package-item mb-5">
                             <div class="image-section">
                                 <img src="photos/package/pack-3.jpg" alt="">
                                 <div class="package-cost">$4000</div>
@@ -378,7 +380,6 @@
                     MORE PACKAGE
                 </div>
             </div>
-        </div>
     </section>
     
     <!-- 10.Popular Places -->
@@ -567,7 +568,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="single-blog-content">
+                    <div class="single-blog-content mb-5">
                         <img src="photos/blog/blog-1.jpg" alt="">
                         <div class="blog-content">
                             <p class="date">10 July 2017</p>
@@ -580,7 +581,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="single-blog-content">
+                    <div class="single-blog-content mb-5">
                         <img src="photos/blog/blog-2.jpg" alt="">
                         <div class="blog-content">
                             <p class="date">10 July 2017</p>
@@ -593,7 +594,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="single-blog-content">
+                    <div class="single-blog-content mb-5">
                         <img src="photos/blog/blog-3.jpg" alt="">
                         <div class="blog-content">
                             <p class="date">10 July 2017</p>
@@ -690,7 +691,7 @@
     <!-- 14. Contact Us -->
     <section id="contact-us">
         <div class="footer-top-area">
-            <div class="bg-overlay">
+            <div class="bg-overlay"></div>
                 <div class="container mt-5 pt-5">
                     <div class="row">
                         <div class="col-md-4">
@@ -757,7 +758,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     </section>
 

@@ -1,0 +1,98 @@
+@media (max-width:1240px){
+    #booking-area{
+        display: none;
+    }
+}
+/* MD device 768px */
+@media (min-width:768px) and (max-width:992px){
+
+}
+
+@media (min-width:515px) and (max-width:744px){
+    .slider-content-area h1{
+        font-size:40px;
+    }
+    #slider-area{
+        height:400px;
+    }
+}
+
+/*SM devices lower than 515 */
+@media (max-width:515px){
+    .slider-content-area h1{
+        font-size:35px;
+    }
+    .slider-content-area h4{
+        font-size:20px;
+    }
+    #popular-packages .heading h2{
+        font-size:30px;
+    }
+    #popular-packages .heading h4{
+        line-height:25px;
+    }
+    #slider-area{
+        height:400px;
+    }
+    .slider-content-area .btn{
+        transform: scale(0.8);
+    }
+    #popular-places .single-pp-item .popular-p-pricing{
+        display:none;
+    }
+    #discount-area h2{
+        font-size:25px;
+    }
+    #customize-controls{
+        margin-top:50px;
+    }
+    #start-trip{
+        transform: scale(0.6);
+        width:200px;
+    }
+}
+
+/* Permanent changes lower than MD */
+@media (max-width:992px){
+    #mobile-menu{
+        display: none;
+    }
+    #open-slider{
+        display: block;
+    }
+}
+
+/* Permanent changes lower than 778px */
+@media (max-width:778px){
+    .home-service-content ul li{
+        width:100%;
+    }
+    .destination-feature li{
+        width:100%;
+    }
+    .destination-content h2{
+        font-size:25px;
+    }
+    .destination-content{
+        padding-top:100px;
+    }
+    .header{
+        height:100px;
+        padding-top:40px;
+    }
+    .header-top{
+        display: none;
+    }
+    #header-line{
+        display: none;
+    }
+    #feature-area{
+        padding:35px 5px 35px 5px;
+    }
+    #video-area{
+        height:450px;
+    }
+    #popular-places .single-pp-item .pp-thumb{
+        display:none;
+    }
+}

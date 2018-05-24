@@ -55,7 +55,7 @@ a:hover{
     color:black;
 }
 .f-right{
-    float:right
+    float:right;
 }
 .text-center{
     text-align:center;
@@ -86,6 +86,7 @@ a:hover{
     width:100%;
     height:100%;
     background-color: rgba(0,0,0,0.4);
+    z-index:0;
 }
 .overlay-dark{
     background-color: rgba(0,0,0,0.7);
@@ -122,7 +123,7 @@ a:hover{
 /* 2.Header Area */
 
 .header{
-    height:28vh;
+    height:200px;
     background-color:white;
     padding:50px;
     font-family:"Roboto";
@@ -135,6 +136,9 @@ a:hover{
     font-size:14px;
     line-height: 21px;
     color:#5d6c83;
+}
+.separator{
+    border-bottom:1px solid #e5e5e5;
 }
 .social-icons ul{
     list-style: none;
@@ -182,15 +186,18 @@ li:hover .submenu{
 a .fa-chevron-down{
     font-size:13px;
 }
-
+#open-slider{
+    cursor:pointer;
+    display: none;
+}
 /* 3.Slider Area */
 #slider-area{
-    height:100vh;
+    height:800px;
     background: url('../../photos/bg/slider.jpg');
     color:white;    
 }
 .slider-content-area{
-    padding-top:225px;
+    padding-top:15%;
 }
 .slider-content-area h1{
     font-size:60px;
@@ -309,11 +316,17 @@ a .fa-chevron-down{
 }
 /* 5.Feature Area */
 #feature-area{
-    height:30vh;
+    min-height:300px;
     padding:30px;
+}
+.single-feature-item .feature-content h4{
+    font-size:20px;
 }
 
 /* 6.Home Service Area */
+#home-service-area{
+    padding-bottom: 100px;
+}
 .home-service-img img{
     margin-left:-54px;
     width:100%;
@@ -354,23 +367,29 @@ a .fa-chevron-down{
 
 /* 7.Video Area */
 #video-area{
-    height:100vh;
+    height:670px;
     width:100%;
     background: url("../../photos/bg/snow.jpg");
     position: relative;
-
 }
 .video-content{
-    padding-top:40vh;
+    padding-top:20%;
     color:white;
+}
+.video-content h3{
+    font-weight:700;
+}
+.video-content p{
+    font-size:80px;
+    margin-bottom:0;
 }
 
 /* 8.Destination Area */
 .destination-content{
-    padding-top:30vh;
+    padding-top:200px;
 }
 .destination-img{
-    padding-top:10vh;
+    padding-top:100px;
 }
 .destination-img img{
     width:105%;
@@ -423,23 +442,30 @@ a .fa-chevron-down{
 /* 9.Popular Packages */
 #popular-packages{
     position: relative;
-    width:100%;
-    min-height:120vh;
+    min-height:900px;
     background: url('../../photos/bg/pack-bg.jpg');
     color:white;
+    padding-bottom:50px;
+}
+#popular-packages .container{
+    position: relative;
+    z-index:100;
 }
 #popular-packages .heading{
-    margin-top:15vh;
+    padding-top:15vh;
 }
 #popular-packages .heading h2{
     font-family: sans-serif;
     font-weight: 800;
     font-size:40px;
+    z-index:2;
 }
 #popular-packages .heading h4{
     font-size:20px;
     line-height: 36px;
 }
+
+
 .single-package-item .image-section{
     position: relative;
 }
@@ -449,7 +475,7 @@ a .fa-chevron-down{
 .single-package-item .package-cost{
     position: absolute;
     left:0;
-    bottom:0;
+    top:0;
     background-color: #F9676B;
     padding:5px 20px 5px 20px;
     font-weight: 800;
@@ -494,7 +520,7 @@ a .fa-chevron-down{
     position: relative;
     display: flex;
     height:140px;
-    margin-bottom:20px;
+    margin-bottom:40px;
 }
 .pp-content{
     padding:20px;
@@ -569,14 +595,15 @@ a .fa-chevron-down{
 
 /* 11.Discount Area */
 #discount-area{
-    height:60vh;
+    min-height:400px;
     width:100%;
     background: url('../../photos/bg/promote.jpg');
     position: relative;
+    margin-top:100px;
 }
 .discount-area-content{
     color:white;
-    padding-top:20vh;
+    padding-top:100px;
 }
 .discount-area-content h2{
     font-family: sans-serif;
@@ -601,7 +628,7 @@ a .fa-chevron-down{
 /* 12.News Area */
 #news-area{
     width:100%;
-    height:110vh;
+    min-height:700px;
 }
 #news-area .section-heading h4{
     color:#5d6c83;
@@ -702,7 +729,7 @@ a .fa-chevron-down{
 /* 14.Contact Us */
 #contact-us{
     width:100%;
-    height:70vh;
+    min-height:70vh;
     background:url('../../photos/bg/pack-bg.jpg');
     position: relative;
     margin-top:100px;

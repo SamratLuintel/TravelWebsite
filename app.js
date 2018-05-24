@@ -15,7 +15,7 @@ window.FontAwesomeConfig = {
 
 
 // Slider Area slider
-var slider = document.getElementById('slider');
+const slider = document.getElementById('slider');
 
 noUiSlider.create(slider, {
     start: [20, 80],
@@ -26,9 +26,9 @@ noUiSlider.create(slider, {
     }
 });
 
-var sliderMin = document.getElementById("slider-min");
+let sliderMin = document.getElementById("slider-min");
 
-var sliderMax = document.getElementById("slider-max");
+let sliderMax = document.getElementById("slider-max");
 
 slider.noUiSlider.on('update', function( values, handle ) {
 
@@ -48,8 +48,9 @@ sliderMin.addEventListener('change', function(){
 sliderMax.addEventListener('change', function(){
 	slider.noUiSlider.set([null, this.value]);
 });
+
 // Slider area date picker
-var checkin = new Pikaday({
+let checkin = new Pikaday({
     field: document.getElementById('datepicker'),
     format: 'D/M/YYYY',
     onSelect: function() {
@@ -57,7 +58,7 @@ var checkin = new Pikaday({
     }
 });
 
-var checkout = new Pikaday({
+let checkout = new Pikaday({
     field: document.getElementById('datepicker2'),
     format: 'D/M/YYYY',
     onSelect: function() {
@@ -67,11 +68,23 @@ var checkout = new Pikaday({
 
 
 // Gallery Area slider
-var slider= tns({
+const gallerySlider= tns({
     "container": ".gallery-slider",
     "items": 4,
     "controlsContainer": "#customize-controls",
     "controls":true,
+    "responsive":{
+        700:{
+            items:4
+        },
+        400:{
+            items:2
+        },
+        200:{
+            items:1
+        }
+  
+    },
     "autoplay": true,
     "nav":false,
     "autoplayButtonOutput":false,
