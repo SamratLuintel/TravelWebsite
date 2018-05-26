@@ -1,0 +1,38 @@
+
+
+/* Permanent changes lower than MD */
+@media (max-width:992px){
+    #navigation-menu{
+        display: none;
+    }
+    #open-slider{
+        display: block;
+    }
+    #banner-area .banner-content{
+        color:white;
+        text-align: center;
+        padding-top:18%;
+    }
+}
+
+/* Permanent changes lower than 778px */
+@media (max-width:778px){
+    .header{
+        height:100px;
+        padding-top:40px;
+    }
+    .header-top{
+        display: none;
+    }
+    #header-line{
+        display: none;
+    }
+    #banner-area{
+        height:300px;
+    }
+    #banner-area .banner-content{
+        color:white;
+        text-align: center;
+        padding-top:25%;
+    }
+}
