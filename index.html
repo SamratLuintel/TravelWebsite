@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=s, initial-scale=1.0">
@@ -13,17 +14,53 @@
     <link rel="stylesheet" href="libraries/noUiSlider/noUiSliderChg.css">
     <link rel="stylesheet" href="libraries/datepicker/pikaday.css">
     <link rel="stylesheet" href="style/index/responsive.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
     <title>This is running</title>
 </head>
+
 <body>
     <!-- Menu on mobile screens -->
-    <div id="side-menu" class="side-nav">
-        <a href="#" class="btn-close" onclick="CloseSlideMenu()">&times;</a>
-        <a href="#">Home</a>
-        <a href="#">Tours</a>
-        <a href="#">Hotels</a>
-    </div>
+    <ul id="side-menu" class="side-nav d-flex flex-column">
+        <li class="align-self-end">
+            <a href="#" class="btn-close" onclick="CloseSlideMenu()">&times;</a>
+        </li>
+        <li class="my-1">
+            <a href="#">HOME</a>
+        </li>
+        <li class="my-1">
+            <a href="#">TOUR</a>
+        </li>
+        <li class="my-1">
+            <a href="#">HOTELS</a>
+        </li>
+        <li class="my-1">
+           <p data-scrolldown="0" class="d-flex justify-content-between m-0">PACKAGES<i class="fas fa-chevron-down mt-1"></i></p>
+           <ul class="d-flex flex-column hide" data-scrolldownUl="0">
+                <li>
+                    <a href="">Japan</a>
+                </li>
+                <li>
+                    <a href="">Asia</a>
+                </li>
+           </ul>
+        </li>
+        <li class="my-1">
+            <p data-scrolldown="1" class="d-flex justify-content-between m-0">PAGES<i class="fas fa-chevron-down mt-1"></i></p>
+            <ul class="d-flex flex-column hide" data-scrolldownUl="1">
+                    <li>
+                        <a href="">Japan</a>
+                    </li>
+                    <li>
+                        <a href="">Asia</a>
+                    </li>
+            </ul>
+        </li>
+
+        <a href="#">Hotels
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </ul>
     <!-- 2.Header Area -->
     <div class="header">
         <div class="container">
@@ -32,25 +69,34 @@
                     <div class="contact-us-section">
                         <div class="call-to-action">
                             <span>Contact Us</span>
-                            : <i class="fas fa-phone"></i> +9999587801 (Sunday - Friday : 9:00am - 5:00pm)
+                            :
+                            <i class="fas fa-phone"></i> +9999587801 (Sunday - Friday : 9:00am - 5:00pm)
                         </div>
                     </div>
                     <div class="social-section d-flex justify-content-end">
                         <div class="social-icons">
                             <ul>
-                                <li><i class="fab fa-facebook-f"></i></li>
-                                <li><i class="fab fa-google-plus-g"></i></li>
-                                <li><i class="fab fa-twitter"></i></li>
-                                <li><i class="fab fa-pinterest"></i></li>
-                            </ul>  
+                                <li>
+                                    <i class="fab fa-facebook-f"></i>
+                                </li>
+                                <li>
+                                    <i class="fab fa-google-plus-g"></i>
+                                </li>
+                                <li>
+                                    <i class="fab fa-twitter"></i>
+                                </li>
+                                <li>
+                                    <i class="fab fa-pinterest"></i>
+                                </li>
+                            </ul>
                         </div>
                         <div class="account ml-3">
-                                ACCOUNT
+                            ACCOUNT
                         </div>
                     </div>
                 </div>
             </div>
-  
+
             <div class="main-area">
                 <div class="row d-flex justify-content-between mt-md-4">
                     <div class="brand-area">
@@ -62,7 +108,7 @@
                     </div>
                     <div class="navbar-area">
                         <div class="basic-menu d-flex justify-content-end">
-                            <div id="mobile-menu">
+                            <div id="navigation-menu">
                                 <ul>
                                     <li>
                                         <a href="#">Home</a>
@@ -74,18 +120,32 @@
                                         <a href="#">Hotels</a>
                                     </li>
                                     <li>
-                                        <a href="">Packages <i class="fas fa-chevron-down"></i></a>
+                                        <a href="">Packages
+                                            <i class="fas fa-chevron-down"></i>
+                                        </a>
                                         <ul class="submenu">
-                                            <li class="subOption"><a href="">SUBMENU 1</a></li>
-                                            <li class="subOption"><a href="">SUBMENU 2</a></li>
-                                            <li class="subOption"><a href="">SUBMENU 3</a></li>
+                                            <li class="subOption">
+                                                <a href="">SUBMENU 1</a>
+                                            </li>
+                                            <li class="subOption">
+                                                <a href="">SUBMENU 2</a>
+                                            </li>
+                                            <li class="subOption">
+                                                <a href="">SUBMENU 3</a>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="">Pages <i class="fas fa-chevron-down"></i></a>
+                                        <a href="">Pages
+                                            <i class="fas fa-chevron-down"></i>
+                                        </a>
                                         <ul class="submenu">
-                                            <li class="subOption"><a href="">About</a></li>
-                                            <li class="subOption"><a href="">Contact</a></li>
+                                            <li class="subOption">
+                                                <a href="">About</a>
+                                            </li>
+                                            <li class="subOption">
+                                                <a href="">Contact</a>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li>
@@ -96,7 +156,9 @@
                                     </li>
                                 </ul>
                             </div>
-                            <span id="open-slider"><i class="fas fa-bars" onclick="OpenSlideMenu()"></i></span>
+                            <span id="open-slider">
+                                <i class="fas fa-bars" onclick="OpenSlideMenu()"></i>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -173,11 +235,13 @@
             <div class="filter-part d-flex">
                 <div class="range-wrapper d-flex">
                     <div class="budget-text mt-4">
-                            Budget Now  : 
+                        Budget Now :
                     </div>
                     <div class="slider-text-wrapper d-flex flex-column ml-3">
                         <div class="text ml-4 mb-2 font-weight-bold">
-                            $<span id="slider-min">21</span>-$<span id="slider-max">22</span> 
+                            $
+                            <span id="slider-min">21</span>-$
+                            <span id="slider-max">22</span>
                         </div>
                         <div id="slider"></div>
                     </div>
@@ -237,7 +301,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="home-service-img">
-                        <img class="d-block mx-auto"src="photos/service.png" alt="">
+                        <img class="d-block mx-auto" src="photos/service.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -245,16 +309,23 @@
                         <h2>POPULAR SERVICE</h2>
                         <h4>ENJOY THE VIEWS OF LIFETIME</h4>
                         <p>
-                            We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms 
-                            of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs.
+                            We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the
+                            moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to
+                            ensue; and equal blame belongs.
                         </p>
                         <ul class="service-list d-flex flex-column d-md-block">
-                            <li><i class="fas fa-arrow-right"></i> First Class Flights</li>
-                            <li><i class="fas fa-arrow-right"></i> City Tours</li>
-                            <li><i class="fas fa-arrow-right"></i> Holiday and Seasonal Tours</li>
-                            <li><i class="fas fa-arrow-right"></i> Special Package Tours</li>
-                            <li><i class="fas fa-arrow-right"></i> Cultural and Theatre Tours</li>
-                            <li><i class="fas fa-arrow-right"></i> Wild and Adventure Tours</li>
+                            <li>
+                                <i class="fas fa-arrow-right"></i> First Class Flights</li>
+                            <li>
+                                <i class="fas fa-arrow-right"></i> City Tours</li>
+                            <li>
+                                <i class="fas fa-arrow-right"></i> Holiday and Seasonal Tours</li>
+                            <li>
+                                <i class="fas fa-arrow-right"></i> Special Package Tours</li>
+                            <li>
+                                <i class="fas fa-arrow-right"></i> Cultural and Theatre Tours</li>
+                            <li>
+                                <i class="fas fa-arrow-right"></i> Wild and Adventure Tours</li>
                         </ul>
                         <div class="point-of-interest">
                             POINTS OF INTEREST
@@ -271,7 +342,9 @@
         <div class="bg-overlay">
             <div class="container">
                 <div class="video-content text-center">
-                    <p class="text-center"><i class="fas fa-play-circle"></i></p>
+                    <p class="text-center">
+                        <i class="fas fa-play-circle"></i>
+                    </p>
                     <h3>INTRO SNOW MOUNTAIN</h3>
                 </div>
             </div>
@@ -286,23 +359,39 @@
                 <div class="col-md-6">
                     <div class="destination-content">
                         <h2>TOP DESTINATIONS</h2>
-                        <h4>EUROPE, PACKAGE STARTED <span>$2500</span></h4>
+                        <h4>EUROPE, PACKAGE STARTED
+                            <span>$2500</span>
+                        </h4>
                         <ul class="destination-rating">
-                            <li><i class="fas fa-star mx-2"></i></li>
-                            <li><i class="fas fa-star mx-2"></i></li>
-                            <li><i class="fas fa-star mx-2"></i></li>
-                            <li><i class="fas fa-star mx-2"></i></li>
-                            <li><i class="fas fa-star mx-2"></i></li>
+                            <li>
+                                <i class="fas fa-star mx-2"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star mx-2"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star mx-2"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star mx-2"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star mx-2"></i>
+                            </li>
                         </ul>
                         <p>
-                            Since, 1995 We denounce with righteous indignation and dislike men who are so beguiled and 
-                            demoralized by the charms of pleasure of the moment, so blinded by desire.
+                            Since, 1995 We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure
+                            of the moment, so blinded by desire.
                         </p>
                         <ul class="destination-feature d-flex flex-column d-md-block">
-                            <li> <i class="fas fa-arrow-right"></i> 5 Days, 4 Night</li>
-                            <li> <i class="fas fa-arrow-right"></i> 5 Star Accomodations</li>
-                            <li> <i class="fas fa-arrow-right"></i> Handpicked Hotels</li>
-                            <li> <i class="fas fa-arrow-right"></i> Given Transportation</li>
+                            <li>
+                                <i class="fas fa-arrow-right"></i> 5 Days, 4 Night</li>
+                            <li>
+                                <i class="fas fa-arrow-right"></i> 5 Star Accomodations</li>
+                            <li>
+                                <i class="fas fa-arrow-right"></i> Handpicked Hotels</li>
+                            <li>
+                                <i class="fas fa-arrow-right"></i> Given Transportation</li>
                         </ul>
                         <div class="point-of-interest">
                             POINT OF INTEREST
@@ -320,68 +409,68 @@
 
     <!-- 9.Popular Packages -->
     <section id="popular-packages">
-            <div class="bg-overlay"></div>
-            <div class="container">
-                <div class="heading text-center mb-5">
-                    <h2>POPULAR PACKAGES</h2>
-                    <h4>TRAVEL EXPRESS PROVIDE</h4>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="single-package-item mb-5">
-                            <div class="image-section">
-                                <img src="photos/package/pack-1.jpg" alt="">
-                                <div class="package-cost">$3000</div>
-                            </div>
-                            <h5>AMERICA- 5 Days, 4 Nights</h5>
-                            <p>
-                                There are many variations of passages of Lorem Ipsum available, 
-                                but the majority have suffered alteration in some form, by
-                            </p>
-                            <div class="read-more">  
-                                Read More  <i class="fas fa-arrow-right"></i> 
-                            </div>
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="heading text-center mb-5">
+                <h2>POPULAR PACKAGES</h2>
+                <h4>TRAVEL EXPRESS PROVIDE</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="single-package-item mb-5">
+                        <div class="image-section">
+                            <img src="photos/package/pack-1.jpg" alt="">
+                            <div class="package-cost">$3000</div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-package-item mb-5">
-                            <div class="image-section">
-                                <img src="photos/package/pack-2.jpg" alt="">
-                                <div class="package-cost">$4000</div>
-                            </div>
-                            <h5>Thailand- 4 Days, 3 Nights</h5>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet modi 
-                                inventore voluptatum molestiae assumenda
-                            </p>
-                            <div class="read-more">
-                                Read More <i class="fas fa-arrow-right"></i> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-package-item mb-5">
-                            <div class="image-section">
-                                <img src="photos/package/pack-3.jpg" alt="">
-                                <div class="package-cost">$4000</div>
-                            </div>
-                            <h5>Thailand- 4 Days, 3 Nights</h5>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet modi 
-                                inventore voluptatum molestiae assumenda
-                            </p>
-                            <div class="read-more">
-                                Read More <i class="fas fa-arrow-right"></i> 
-                            </div>
+                        <h5>AMERICA- 5 Days, 4 Nights</h5>
+                        <p>
+                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
+                        </p>
+                        <div class="read-more">
+                            Read More
+                            <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
                 </div>
-                <div class="more-package btn-hover-white text-center my-5">
-                    MORE PACKAGE
+                <div class="col-md-4">
+                    <div class="single-package-item mb-5">
+                        <div class="image-section">
+                            <img src="photos/package/pack-2.jpg" alt="">
+                            <div class="package-cost">$4000</div>
+                        </div>
+                        <h5>Thailand- 4 Days, 3 Nights</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet modi inventore voluptatum molestiae assumenda
+                        </p>
+                        <div class="read-more">
+                            Read More
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-package-item mb-5">
+                        <div class="image-section">
+                            <img src="photos/package/pack-3.jpg" alt="">
+                            <div class="package-cost">$4000</div>
+                        </div>
+                        <h5>Thailand- 4 Days, 3 Nights</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet modi inventore voluptatum molestiae assumenda
+                        </p>
+                        <div class="read-more">
+                            Read More
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="more-package btn-hover-white text-center my-5">
+                MORE PACKAGE
+            </div>
+        </div>
     </section>
-    
+
     <!-- 10.Popular Places -->
     <section id="popular-places">
         <div class="container">
@@ -400,9 +489,12 @@
                                 <h3>Louvre Museum France</h3>
                                 <p>Victoria Falls, 5 Days, $ Night Tour</p>
                                 <ul class="pp-meta">
-                                    <li class="mx-1"><i class="fas fa-star"></i> 20</li>
-                                    <li class="mx-1"><i class="fas fa-heart"></i> 18</li>
-                                    <li class="mx-1"><i class="fas fa-comment"></i> 15</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-star"></i> 20</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-heart"></i> 18</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-comment"></i> 15</li>
                                 </ul>
                             </div>
                             <div class="popular-p-pricing">
@@ -418,9 +510,12 @@
                                 <h3>Louvre Museum France</h3>
                                 <p>Victoria Falls, 5 Days, $ Night Tour</p>
                                 <ul class="pp-meta">
-                                    <li class="mx-1"><i class="fas fa-star"></i> 20</li>
-                                    <li class="mx-1"><i class="fas fa-heart"></i> 18</li>
-                                    <li class="mx-1"><i class="fas fa-comment"></i> 15</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-star"></i> 20</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-heart"></i> 18</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-comment"></i> 15</li>
                                 </ul>
                             </div>
                             <div class="popular-p-pricing">
@@ -436,9 +531,12 @@
                                 <h3>Louvre Museum France</h3>
                                 <p>Victoria Falls, 5 Days, $ Night Tour</p>
                                 <ul class="pp-meta">
-                                    <li class="mx-1"><i class="fas fa-star"></i> 20</li>
-                                    <li class="mx-1"><i class="fas fa-heart"></i> 18</li>
-                                    <li class="mx-1"><i class="fas fa-comment"></i> 15</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-star"></i> 20</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-heart"></i> 18</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-comment"></i> 15</li>
                                 </ul>
                             </div>
                             <div class="popular-p-pricing">
@@ -454,9 +552,12 @@
                                 <h3>Louvre Museum France</h3>
                                 <p>Victoria Falls, 5 Days, $ Night Tour</p>
                                 <ul class="pp-meta">
-                                    <li class="mx-1"><i class="fas fa-star"></i> 20</li>
-                                    <li class="mx-1"><i class="fas fa-heart"></i> 18</li>
-                                    <li class="mx-1"><i class="fas fa-comment"></i> 15</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-star"></i> 20</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-heart"></i> 18</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-comment"></i> 15</li>
                                 </ul>
                             </div>
                             <div class="popular-p-pricing">
@@ -465,7 +566,7 @@
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>
 
 
                 <div class="col-md-6">
@@ -478,9 +579,12 @@
                                 <h3>Louvre Museum France</h3>
                                 <p>Victoria Falls, 5 Days, $ Night Tour</p>
                                 <ul class="pp-meta">
-                                    <li class="mx-1"><i class="fas fa-star"></i> 20</li>
-                                    <li class="mx-1"><i class="fas fa-heart"></i> 18</li>
-                                    <li class="mx-1"><i class="fas fa-comment"></i> 15</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-star"></i> 20</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-heart"></i> 18</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-comment"></i> 15</li>
                                 </ul>
                             </div>
                             <div class="popular-p-pricing">
@@ -496,9 +600,12 @@
                                 <h3>Louvre Museum France</h3>
                                 <p>Victoria Falls, 5 Days, $ Night Tour</p>
                                 <ul class="pp-meta">
-                                    <li class="mx-1"><i class="fas fa-star"></i> 20</li>
-                                    <li class="mx-1"><i class="fas fa-heart"></i> 18</li>
-                                    <li class="mx-1"><i class="fas fa-comment"></i> 15</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-star"></i> 20</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-heart"></i> 18</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-comment"></i> 15</li>
                                 </ul>
                             </div>
                             <div class="popular-p-pricing">
@@ -514,9 +621,12 @@
                                 <h3>Louvre Museum France</h3>
                                 <p>Victoria Falls, 5 Days, $ Night Tour</p>
                                 <ul class="pp-meta">
-                                    <li class="mx-1"><i class="fas fa-star"></i> 20</li>
-                                    <li class="mx-1"><i class="fas fa-heart"></i> 18</li>
-                                    <li class="mx-1"><i class="fas fa-comment"></i> 15</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-star"></i> 20</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-heart"></i> 18</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-comment"></i> 15</li>
                                 </ul>
                             </div>
                             <div class="popular-p-pricing">
@@ -532,9 +642,12 @@
                                 <h3>Louvre Museum France</h3>
                                 <p>Victoria Falls, 5 Days, $ Night Tour</p>
                                 <ul class="pp-meta">
-                                    <li class="mx-1"><i class="fas fa-star"></i> 20</li>
-                                    <li class="mx-1"><i class="fas fa-heart"></i> 18</li>
-                                    <li class="mx-1"><i class="fas fa-comment"></i> 15</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-star"></i> 20</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-heart"></i> 18</li>
+                                    <li class="mx-1">
+                                        <i class="fas fa-comment"></i> 15</li>
                                 </ul>
                             </div>
                             <div class="popular-p-pricing">
@@ -548,11 +661,12 @@
         </div>
     </section>
 
-    <!-- 11.Discount Area -->  
+    <!-- 11.Discount Area -->
     <section id="discount-area">
         <div class="bg-overlay overlay-dark">
             <div class="discount-area-content text-center">
-                <h2>GET DISCOUNT <span>10-20%</span> OFF ANY TOUR PACKAGE</h2>
+                <h2>GET DISCOUNT
+                    <span>10-20%</span> OFF ANY TOUR PACKAGE</h2>
                 <h5>WHEN YOU PURCHASE ANY PACKAGE AND GET NEXT TOUR</h5>
                 <div id="start-trip" class="btn-hover-white">START YOUR TRIP NOW</div>
             </div>
@@ -574,7 +688,8 @@
                             <p class="date">10 July 2017</p>
                             <h4>WHAT'S OPEN IN THE CARIAN AFTER HURRICANES IRMA AND MARIA</h4>
                             <div class="read-more">
-                                READ MORE <i class="fas fa-arrow-right"></i> 
+                                READ MORE
+                                <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
                     </div>
@@ -587,7 +702,8 @@
                             <p class="date">10 July 2017</p>
                             <h4>WHAT'S OPEN IN THE CARIAN AFTER HURRICANES IRMA AND MARIA</h4>
                             <div class="read-more">
-                                READ MORE <i class="fas fa-arrow-right"></i> 
+                                READ MORE
+                                <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
                     </div>
@@ -600,7 +716,8 @@
                             <p class="date">10 July 2017</p>
                             <h4>WHAT'S OPEN IN THE CARIAN AFTER HURRICANES IRMA AND MARIA</h4>
                             <div class="read-more">
-                                READ MORE <i class="fas fa-arrow-right"></i> 
+                                READ MORE
+                                <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
                     </div>
@@ -692,72 +809,80 @@
     <section id="contact-us">
         <div class="footer-top-area">
             <div class="bg-overlay"></div>
-                <div class="container mt-5 pt-5">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="footer-widget">
-                                <h4>Contact Us</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt illo nobis
-                                </p>
-                                <ul class="footer-social-icons">
-                                    <li><i class="fab fa-facebook-f"></i></li>
-                                    <li><i class="fab fa-google-plus-g"></i></li>
-                                    <li><i class="fab fa-twitter"></i></li>
-                                    <li><i class="fab fa-pinterest"></i></li>
-                                </ul>
-                            </div>
+            <div class="container mt-5 pt-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-widget">
+                            <h4>Contact Us</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt illo nobis
+                            </p>
+                            <ul class="footer-social-icons">
+                                <li>
+                                    <i class="fab fa-facebook-f"></i>
+                                </li>
+                                <li>
+                                    <i class="fab fa-google-plus-g"></i>
+                                </li>
+                                <li>
+                                    <i class="fab fa-twitter"></i>
+                                </li>
+                                <li>
+                                    <i class="fab fa-pinterest"></i>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-md-3">
-                            <div class="footer-widget">
-                                <h4>NEWS</h4>
-                                <ul class="footer-link">
-                                    <li>
-                                        <a href="#">Subscriptions</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">New Apps</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Download Now</a>
-                                    </li>
-                                </ul>
-                            </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-widget">
+                            <h4>NEWS</h4>
+                            <ul class="footer-link">
+                                <li>
+                                    <a href="#">Subscriptions</a>
+                                </li>
+                                <li>
+                                    <a href="#">New Apps</a>
+                                </li>
+                                <li>
+                                    <a href="#">Download Now</a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-md-2">
-                            <div class="footer-widget">
-                                <h4>COMPANY</h4>
-                                <ul class="footer-link">
-                                    <li>
-                                        <a href="#">Screenshot</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Features</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Price</a>
-                                    </li>
-                                </ul>
-                            </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="footer-widget">
+                            <h4>COMPANY</h4>
+                            <ul class="footer-link">
+                                <li>
+                                    <a href="#">Screenshot</a>
+                                </li>
+                                <li>
+                                    <a href="#">Features</a>
+                                </li>
+                                <li>
+                                    <a href="#">Price</a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-md-3">
-                            <div class="footer-widget">
-                                <h4>RESOURCES</h4>
-                                <ul class="footer-link">
-                                    <li>
-                                        <a href="#">Support</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Contact</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Privacy Terms</a>
-                                    </li>
-                                </ul>
-                            </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-widget">
+                            <h4>RESOURCES</h4>
+                            <ul class="footer-link">
+                                <li>
+                                    <a href="#">Support</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Terms</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     </section>
 
@@ -770,4 +895,5 @@
     <script src="libraries/datepicker/pikaday.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>

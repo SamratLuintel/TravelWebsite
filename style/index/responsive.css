@@ -54,7 +54,7 @@
 
 /* Permanent changes lower than MD */
 @media (max-width:992px){
-    #mobile-menu{
+    #navigation-menu{
         display: none;
     }
     #open-slider{
