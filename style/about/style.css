@@ -39,10 +39,10 @@
     box-shadow: 0px 0px 0px 5px #087dc2;
 }
 
-#team .heading h1{
+#our-teams .heading h1{
     position: relative;
 }
-#team .heading h1:before{
+#our-teams .heading h1:before{
     content:'';
     background: #fade03;
     height:4px;
@@ -52,4 +52,19 @@
     right: 0;
     margin:auto;
     bottom:-4px;
+}
+
+#our-teams .card .team-contact span{
+    background: url('../../photos/icon/down-arrow.png');
+    display: inline-block;
+    height:18px;
+    width:37px;
+    margin-right:5px;
+    position: relative;
+    top:13px;
+}
+
+#our-teams .social-icons{
+    display: flex;
+    list-style: none;
 }
