@@ -16,12 +16,156 @@
 
 <body>
 
-    <section id="about-banner">
-        <div class="banner-text">
-            <div class="heading">ABOUT</div>
-            <div class="link">
-                <a href="">Home</a>/About</div>
+      <!--Side Navigation Menu on mobile screens -->
+      <ul id="side-menu" class="side-nav d-flex flex-column">
+            <li class="align-self-end">
+                <a href="#" class="btn-close" onclick="CloseSlideMenu()">&times;</a>
+            </li>
+            <li class="my-1">
+                <a href="#">HOME</a>
+            </li>
+            <li class="my-1">
+                <a href="#">TOUR</a>
+            </li>
+            <li class="my-1">
+                <a href="#">HOTELS</a>
+            </li>
+            <li class="my-1">
+               <p data-scrolldown="0" class="d-flex justify-content-between m-0">PACKAGES<i class="fas fa-chevron-down mt-1"></i></p>
+               <ul class="d-flex flex-column hide" data-scrolldownUl="0">
+                    <li>
+                        <a href="">Japan</a>
+                    </li>
+                    <li>
+                        <a href="">Asia</a>
+                    </li>
+               </ul>
+            </li>
+            <li class="my-1">
+                <p data-scrolldown="1" class="d-flex justify-content-between m-0">PAGES<i class="fas fa-chevron-down mt-1"></i></p>
+                <ul class="d-flex flex-column hide" data-scrolldownUl="1">
+                        <li>
+                            <a href="">Japan</a>
+                        </li>
+                        <li>
+                            <a href="">Asia</a>
+                        </li>
+                </ul>
+            </li>
+    
+            <a href="#">Hotels
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </ul>
+
+
+
+        <!-- Header Area -->
+        <div class="header">
+            <div class="container">
+                <div class="header-top">
+                    <div class="row justify-content-between separator">
+                        <div class="contact-us-section">
+                            <div class="call-to-action">
+                                <span>Contact Us</span>
+                                :
+                                <i class="fas fa-phone"></i> +9999587801 (Sunday - Friday : 9:00am - 5:00pm)
+                            </div>
+                        </div>
+                        <div class="social-section d-flex justify-content-end">
+                            <div class="social-icons">
+                                <ul>
+                                    <li>
+                                        <i class="fab fa-facebook-f"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-twitter"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-pinterest"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="account ml-3">
+                                ACCOUNT
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="main-area">
+                    <div class="row d-flex justify-content-between mt-md-4">
+                        <div class="brand-area">
+                            <div class="brand">
+                                <div class="brand-name">
+                                    MountainTravel
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar-area">
+                            <div class="basic-menu d-flex justify-content-end">
+                                <div id="navigation-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tour</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Hotels</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Packages
+                                                <i class="fas fa-chevron-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+                                                <li class="subOption">
+                                                    <a href="">SUBMENU 1</a>
+                                                </li>
+                                                <li class="subOption">
+                                                    <a href="">SUBMENU 2</a>
+                                                </li>
+                                                <li class="subOption">
+                                                    <a href="">SUBMENU 3</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">Pages
+                                                <i class="fas fa-chevron-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+                                                <li class="subOption">
+                                                    <a href="">About</a>
+                                                </li>
+                                                <li class="subOption">
+                                                    <a href="">Contact</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span id="open-slider">
+                                    <i class="fas fa-bars" onclick="OpenSlideMenu()"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    <!-- About banner section -->
+    <section id="about-banner">
         <img src="../../photos/bg/about-banner.jpg" alt="">
     </section>
 
@@ -54,6 +198,7 @@
         </div>
     </section>
 
+    <!-- Featured-Area -->
     <section id="featured-area">
         <div class="row">
             <div class="col-md-3">
@@ -79,6 +224,8 @@
         </div>
     </section>
 
+
+    <!-- Our-teams -->
     <section id="our-teams">
         <div class="heading">
             <h1 class="text-center">OUR TEAM</h1>
@@ -203,6 +350,140 @@
         </div>
     </section>
 
+
+    <!-- Timeline -->
+    <section id="timeline">
+        <ul>
+            <li>
+                <div class="timeline-card">
+                     <div class="card-heading color--blue">
+                         <div class="card-number color-darkBlue--cardNumber">
+                             <span>01</span>
+                         </div>
+                         <div class="heading-description">
+                             <h2><span class="small">SUBTITLE</span> <br />TECHNOLOGY</h2>
+                         </div>
+                     </div>
+                     <div class="card-body">
+                         <p class="card-text">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.
+                         </p>
+                         <img src="http://placehold.it/1000x500" alt="Graphic">
+                     </div>
+                </div>
+            </li>
+            <li>
+             <div class="timeline-card">
+                  <div class="card-heading color--green">
+                      <div class="card-number color-darkGreen--cardNumber">
+                          <span>02</span>
+                      </div>
+                      <div class="heading-description">
+                          <h2><span class="small">SUBTITLE</span> <br />TECHNOLOGY</h2>
+                      </div>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.
+                      </p>
+                      <img src="http://placehold.it/1000x500" alt="Graphic">
+                  </div>
+             </div>
+         </li>
+         <li>
+             <div class="timeline-card">
+                  <div class="card-heading color--pink">
+                      <div class="card-number color-darkPink--cardNumber">
+                          <span>03</span>
+                      </div>
+                      <div class="heading-description">
+                          <h2><span class="small">SUBTITLE</span> <br />TECHNOLOGY</h2>
+                      </div>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.
+                      </p>
+                      <img src="http://placehold.it/1000x500" alt="Graphic">
+                  </div>
+             </div>
+         </li>
+         <li>
+             <div class="timeline-card">
+                  <div class="card-heading color--purple">
+                      <div class="card-number color-darkPurple--cardNumber">
+                          <span>04</span>
+                      </div>
+                      <div class="heading-description">
+                          <h2><span class="small">SUBTITLE</span> <br />TECHNOLOGY</h2>
+                      </div>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.
+                      </p>
+                      <img src="http://placehold.it/1000x500" alt="Graphic">
+                  </div>
+             </div>
+         </li>
+         <li>
+             <div class="timeline-card">
+                  <div class="card-heading color--blue">
+                      <div class="card-number color-darkBlue--cardNumber">
+                          <span>05</span>
+                      </div>
+                      <div class="heading-description">
+                          <h2><span class="small">SUBTITLE</span> <br />TECHNOLOGY</h2>
+                      </div>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.
+                      </p>
+                      <img src="http://placehold.it/1000x500" alt="Graphic">
+                  </div>
+             </div>
+         </li>
+        </ul>
+    </section>
+    <!-- What Others Say -->
+
+    <section id="what-others-say">
+        <div class="section-heading">
+            <h2>What others tourist are saying about us</h2>
+        </div>
+        <div class="container">
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, commodi pariatur explicabo corporis
+                            consequuntur unde consectetur sed porro cum eius.</p>
+                        <img src="" alt="">
+                        <h5 class="card-title">Sarah Bennett</h5>
+                        <h6 class="card-subtitle">United States</h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, commodi pariatur explicabo corporis
+                            consequuntur unde consectetur sed porro cum eius.</p>
+                        <img src="" alt="">
+                        <h5 class="card-title">Sarah Bennett</h5>
+                        <h6 class="card-subtitle">United States</h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, commodi pariatur explicabo corporis
+                            consequuntur unde consectetur sed porro cum eius.</p>
+                        <img src="" alt="">
+                        <h5 class="card-title">Sarah Bennett</h5>
+                        <h6 class="card-subtitle">United States</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

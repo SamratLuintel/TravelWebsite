@@ -1,3 +1,154 @@
+/* CSS INDEX 
+        Side-Navigation
+        Header-Area
+        About banner section
+        Featured area
+        Our-teams
+        Timeline
+        What Others Say
+
+
+*/
+
+*{
+    font-family:"Roboto",sans-serif;
+}
+
+a{
+    text-decoration: none !important;
+}
+/* Side-Navigation */
+.side-nav{
+    position: fixed;
+    background-color:#222222;
+    transition: width 0.3s;
+    overflow: hidden;
+    width:0px;
+    height:100vh;
+    z-index:99;
+    padding:0px;
+}
+.side-nav a{
+    background-color:transparent;
+    color:rgba(255, 255, 255, 0.4);
+    font-size:18px;
+}
+.side-nav li{
+    list-style: none;
+}
+.side-nav li{
+    background-color:transparent;
+    color:rgba(255, 255, 255, 0.4);
+    font-size:18px;
+}
+.side-nav p{
+    cursor:pointer;
+    margin:none;
+    padding:none;
+}
+.side-nav p:hover{
+    color:#F78536;
+    cursor:pointer;
+}
+
+.side-nav li i{
+    font-size:14px;
+}
+.side-nav a:hover{
+    color:#F78536;
+    cursor:pointer;
+}
+.open-slider{
+    cursor:pointer;
+}
+.hide{
+    display: none !important;
+}
+
+/* .Header Area */
+
+.header{
+    height:200px;
+    background-color:white;
+    padding:50px;
+    font-family:"Roboto";
+}
+.header a{
+    text-decoration: none !important;
+}
+.header li:hover{
+    color:#F96D71;
+}
+.header hr{
+    margin-top:-0.3rem;
+    margin-bottom:2rem;
+}
+.header-top{
+    font-size:14px;
+    line-height: 21px;
+    color:#5d6c83;
+}
+.separator{
+    border-bottom:1px solid #e5e5e5;
+}
+.social-icons ul{
+    list-style: none;
+    display: flex;
+}
+.social-icons ul li{
+    margin-left:10px;
+    margin-right:10px;
+    cursor:pointer;
+}
+
+#navigation-menu > ul{
+    display: flex;
+    list-style: none;
+} 
+#navigation-menu > ul>li{
+    margin:10px;
+    position: relative;
+}
+#navigation-menu ul li a{
+    color:#1b1b1b;
+    text-transform: uppercase;
+    transition:0.3s;
+    font-size:14px;
+}
+#navigation-menu a:hover{
+    color:#F96D71;
+}
+.submenu{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding:0;
+    position: absolute;
+    margin-top:38px;
+    width:200px;
+    transition:height 0.3s;
+}
+.submenu li{
+    background-color:#FFFFFF;
+    padding:10px;
+    margin-bottom:1px;
+}
+li .submenu{
+    height:0;
+    overflow: hidden;
+}
+li:hover .submenu{
+    height:200px;
+}
+a .fa-chevron-down{
+    font-size:13px;
+}
+#open-slider{
+    cursor:pointer;
+    display: none;
+}
+
+
 /* About banner section */
 
 .banner-text{
@@ -15,6 +166,8 @@
    width:90%;
 }
 
+
+/* Featured-Area */
 #featured-area{
     padding:70px 15%;
     box-sizing: border-box;
@@ -39,6 +192,9 @@
     box-shadow: 0px 0px 0px 5px #087dc2;
 }
 
+
+
+/* Our-teams */
 #our-teams .heading h1{
     position: relative;
 }
@@ -67,4 +223,174 @@
 #our-teams .social-icons{
     display: flex;
     list-style: none;
+}
+
+
+/* Timeline */
+#timeline{
+    background-color: rgb(228, 222, 222);
+    height:1500px;
+    padding-top: 100px;
+}
+
+#timeline ul li{
+    list-style: none;
+    position: relative;
+    width: 1px;
+    /* padding-top: different for even and off */
+    margin: 0 auto;
+    background: rgb(175, 173, 173);
+}
+
+#timeline ul li:before{
+    content:'';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top:0px;
+    background: rgb(175, 173, 173);
+    transform: translateX(-44%);
+    border:5px solid rgb(228, 222, 222);
+    z-index:90;
+}
+
+.timeline-card img{
+    width: 100%;
+}
+.timeline-card{
+    width:370px;
+    height:380px;
+    position: absolute;
+    margin-top:-30px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    border:1px solid rgb(247, 244, 244);
+    z-index:99;
+}
+
+.timeline-card .card-heading{
+    box-sizing: border-box;
+    width:100%;
+    height:80px;
+    padding:15px 0px 15px 20px;
+    display: flex;
+    position: relative;
+}
+
+.timeline-card .card-heading .card-number{
+    box-sizing: border-box;
+    width:57px;
+    height:50px;
+    color:white;
+    font-size:35px;
+    font-weight: bold;
+    padding:5px 0px 0px 10px;
+}
+
+/* Timeline setting for odd element */
+
+#timeline li:nth-child(odd) .timeline-card{
+    transform: translateX(-120%);
+}
+
+#timeline li:nth-child(odd){
+    padding-top: 400px;
+}
+
+#timeline li:first-child{
+    padding-top: 30px;
+}
+#timeline li:nth-child(odd) .timeline-card .card-heading:before{
+    content:'';
+    position: absolute;
+    right:-3%;
+    top:34%;
+    border-left:14px solid transparent;
+    border-left-color:inherit;
+    border-top:14px solid transparent;
+    border-bottom:14px solid transparent;
+}   
+
+
+/* Timeline setting for even element */
+#timeline li:nth-child(even) .timeline-card .card-heading:before{
+    content:'';
+    position: absolute;
+    left:-3%;
+    top:34%;
+    border-right:14px solid transparent;
+    border-right-color:inherit;
+    border-top:14px solid transparent;
+    border-bottom:14px solid transparent;
+}   
+#timeline li:nth-child(even) .timeline-card{
+    transform: translateX(20%);
+}
+#timeline li:nth-child(even){
+    padding-top: 100px;
+}
+
+.timeline-card .card-heading .heading-description{
+    color:white;
+    display: inline;
+    letter-spacing: 2px;
+    margin: -20px 0px 0px 10px;
+    line-height: 1.5rem;
+}
+
+.timeline-card .card-body{
+    padding:5px 15px 15px 15px;
+}
+.timeline-card .small{
+    font-size:17px;
+    font-weight: normal;
+}
+
+
+
+.color--blue{
+    background-color: #46B8E9;
+    border-color:#46B8E9;
+}
+
+.color-darkBlue--cardNumber{
+    background-color: #3A99C2;
+}
+
+.color--green{
+    background-color: #3EE9D1;
+    border-color: #3EE9D1;
+}
+
+.color-darkGreen--cardNumber{
+    background-color: #34C2AE;
+}
+
+.color--pink{
+    background-color: #CE43EB;
+    border-color: #CE43EB;
+}
+
+.color-darkPink--cardNumber{
+    background-color: #AB38C4;
+}
+
+.color--purple{
+    background-color: #4D92EB;
+    border-color: #4D92EB;
+}
+
+.color-darkPurple--cardNumber{
+    background-color: #4079C4;
+}
+
+
+
+
+/* What Others Say */
+
+#what-others-say{
+    background-color: #F5F8F9;
 }

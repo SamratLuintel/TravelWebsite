@@ -1,0 +1,83 @@
+
+
+/* Permanent changes lower than MD */
+@media (max-width:992px){
+    #navigation-menu{
+        display: none;
+    }
+    #open-slider{
+        display: block;
+    }
+}
+
+/* Permanent changes lower than 778px */
+@media (max-width:778px){
+    .header{
+        height:100px;
+        padding-top:40px;
+    }
+    .header-top{
+        display: none;
+    }
+    #header-line{
+        display: none;
+    }
+}
+
+@media (max-width:1000px){
+    /* Timeline setting for odd element */
+        #timeline{
+            height:2500px;
+        }
+        .timeline-card{
+            position: relative;
+            margin-top:0;
+        }
+        #timeline li:nth-child(odd) .timeline-card{
+            transform: translateX(-50%);
+        }
+
+        #timeline li:nth-child(odd){
+            padding-top: 100px;
+        }
+
+        #timeline li:first-child{
+            padding-top: 0px;
+        }
+        #timeline li:nth-child(odd) .timeline-card .card-heading:before{
+            display: none;
+        }   
+
+        /* Timeline even */
+        #timeline li:nth-child(even) .timeline-card .card-heading:before{
+            display: none;
+        }   
+        #timeline li:nth-child(even) .timeline-card{
+            transform: translateX(-50%);
+        }
+        #timeline li:nth-child(even){
+            padding-top: 100px;
+        }
+}
+
+@media (max-width:500px){
+    .timeline-card{
+        width:300px;
+    }
+}
+
+@media (max-width:400px){
+    .timeline-card{
+        width:200px;
+    }
+    .timeline-card .card-heading .heading-description{
+        font-size:10px;
+    }
+    #timeline li:nth-child(odd) .timeline-card{
+        transform: translateX(-60%);
+    } 
+    #timeline li:nth-child(even) .timeline-card{
+        transform: translateX(-60%);
+    }
+    
+}

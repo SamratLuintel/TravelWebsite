@@ -27,7 +27,8 @@ const myMap = ()=> {
     let mapOptions = {
         center: new google.maps.LatLng(51.5, -0.12),
         zoom: 10,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        scrollwheel: false,
     }
     let map = new google.maps.Map(document.getElementById("map"), mapOptions);
 }
