@@ -25,6 +25,11 @@
 }
 
 @media (max-width:1000px){
+
+    #our-teams .card img{
+        width:90px;
+        margin-top:-70px;
+    }
     /* Timeline setting for odd element */
         #timeline{
             height:2500px;
@@ -64,9 +69,38 @@
     .timeline-card{
         width:300px;
     }
+
+    #featured-area{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline-card .card-heading .heading-description h2{
+        position: relative;
+        top:13px;
+        font-size:24px;
+    }
 }
 
 @media (max-width:400px){
+    #timeline{
+        height:2600px;
+    }
+    .timeline-card .card-heading .heading-description h2{
+        position: relative;
+        top:26px;
+        font-size:13px;
+    }
+    .timeline-card .small{
+        font-size:11px;
+    }
+    
+    #what-others-say .section-heading h2{
+        font-size:25px;
+        width:250px;
+        text-align: center;
+    }
+    
     .timeline-card{
         width:200px;
     }
