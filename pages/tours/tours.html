@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../libraries/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../style/tours/style.css">
+    <link rel="stylesheet" href="../../style/tours/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Side Navigation Menu on mobile screens -->
+    <ul id="side-menu" class="side-nav d-flex flex-column">
+        <li class="align-self-end">
+            <a href="#" class="btn-close" onclick="CloseSlideMenu()">&times;</a>
+        </li>
+        <li class="my-1">
+            <a href="#">HOME</a>
+        </li>
+        <li class="my-1">
+            <a href="#">TOUR</a>
+        </li>
+        <li class="my-1">
+            <a href="#">HOTELS</a>
+        </li>
+        <li class="my-1">
+            <p data-scrolldown="0" class="d-flex justify-content-between m-0">PACKAGES
+                <i class="fas fa-chevron-down mt-1"></i>
+            </p>
+            <ul class="d-flex flex-column hide" data-scrolldownUl="0">
+                <li>
+                    <a href="">Japan</a>
+                </li>
+                <li>
+                    <a href="">Asia</a>
+                </li>
+            </ul>
+        </li>
+        <li class="my-1">
+            <p data-scrolldown="1" class="d-flex justify-content-between m-0">PAGES
+                <i class="fas fa-chevron-down mt-1"></i>
+            </p>
+            <ul class="d-flex flex-column hide" data-scrolldownUl="1">
+                <li>
+                    <a href="">Japan</a>
+                </li>
+                <li>
+                    <a href="">Asia</a>
+                </li>
+            </ul>
+        </li>
+    
+        <a href="#">Hotels
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </ul>
+    
+    
+    
+    <!-- Header Area -->
+    <div class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="row justify-content-between separator">
+                    <div class="contact-us-section">
+                        <div class="call-to-action">
+                            <span>Contact Us</span>
+                            :
+                            <i class="fas fa-phone"></i> +9999587801 (Sunday - Friday : 9:00am - 5:00pm)
+                        </div>
+                    </div>
+                    <div class="social-section d-flex justify-content-end">
+                        <div class="social-icons">
+                            <ul>
+                                <li>
+                                    <i class="fab fa-facebook-f"></i>
+                                </li>
+                                <li>
+                                    <i class="fab fa-google-plus-g"></i>
+                                </li>
+                                <li>
+                                    <i class="fab fa-twitter"></i>
+                                </li>
+                                <li>
+                                    <i class="fab fa-pinterest"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="account ml-3">
+                            ACCOUNT
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="main-area">
+                <div class="row d-flex justify-content-between mt-md-4">
+                    <div class="brand-area">
+                        <div class="brand">
+                            <div class="brand-name">
+                                MountainTravel
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-area">
+                        <div class="basic-menu d-flex justify-content-end">
+                            <div id="navigation-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tour</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Hotels</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Packages
+                                            <i class="fas fa-chevron-down"></i>
+                                        </a>
+                                        <ul class="submenu">
+                                            <li class="subOption">
+                                                <a href="">SUBMENU 1</a>
+                                            </li>
+                                            <li class="subOption">
+                                                <a href="">SUBMENU 2</a>
+                                            </li>
+                                            <li class="subOption">
+                                                <a href="">SUBMENU 3</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">Pages
+                                            <i class="fas fa-chevron-down"></i>
+                                        </a>
+                                        <ul class="submenu">
+                                            <li class="subOption">
+                                                <a href="">About</a>
+                                            </li>
+                                            <li class="subOption">
+                                                <a href="">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span id="open-slider">
+                                <i class="fas fa-bars" onclick="OpenSlideMenu()"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="tours">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 tours-packages">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <!-- 1st item -->
+                            <div class="package-card">
+                                <div class="package-image">
+                                    <div class="bg-overlay"></div>
+                                    <div class="ribbon-red">
+                                        <span></span>
+                                        <div class="ribbon-text">POPULAR</div>
+                                    </div>
+                                    <div class="image-wrapper">
+                                        <img src="../../photos/tours/tour_box_1.jpg" alt="" class="package-image">
+                                    </div>
+                                    <div class="short-info">
+                                        <div class="name">
+                                            <i class="fas fa-home"></i> Historic
+                                        </div>
+                                        <div class="price">
+                                            $45
+                                        </div>
+                                    </div>        
+                                </div>
+                                <div class="package-body">
+                                    <div class="package-comment">
+                                        <div class="package-left">
+                                            <h3>
+                                                <strong>ARC TRIOMPHE <span>TOUR</span></strong>
+                                            </h3>
+                                            <ul class="ratings">
+                                                <li><i class="far fa-smile bg-yellow"></i></li>
+                                                <li><i class="far fa-smile bg-yellow ml-2"></i></li>
+                                                <li><i class="far fa-smile bg-yellow ml-2"></i></li>
+                                                <li><i class="far fa-smile bg-yellow ml-2"></i></li>
+                                                <li><i class="far fa-smile ml-2 "></i></li>
+                                                <li class="total-comments ml-2 text-muted">(74)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="package-wishlist">
+                                            <div class="wishlist-wrapper" data-key=1>
+                                                <div class="wishlist">
+                                                    Add To wishlist
+                                                </div>
+                                            </div>
+                                            <i data-heartKey=1 class="fas fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="map-view pt-2"> <i class="fas fa-map-marker-alt mr-2"></i> View On Map</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 2nd item -->
+                        <div class="col-md-6 col-sm-6">
+                            <div class="package-card">
+                                <div class="package-image">
+                                    <div class="bg-overlay"></div>
+                                    <div class="ribbon-red">
+                                        <span></span>
+                                        <div class="ribbon-text">POPULAR</div>
+                                    </div>
+                                    <div class="image-wrapper">
+                                        <img src="../../photos/tours/tour_box_2.jpg" alt="" class="package-image">
+                                    </div>
+
+                                    <div class="short-info">
+                                        <div class="name">
+                                            <i class="fas fa-home"></i> Historic
+                                        </div>
+                                        <div class="price">
+                                            $45
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="package-body">
+                                    <div class="package-comment">
+                                        <div class="package-left">
+                                            <h3>
+                                                <strong>ARC TRIOMPHE
+                                                    <span>TOUR</span>
+                                                </strong>
+                                            </h3>
+                                            <ul class="ratings">
+                                                <li>
+                                                    <i class="far fa-smile bg-yellow"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-smile bg-yellow ml-2"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-smile bg-yellow ml-2"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-smile bg-yellow ml-2"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-smile ml-2 "></i>
+                                                </li>
+                                                <li class="total-comments ml-2 text-muted">(74)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="package-wishlist">
+                                            <div class="wishlist-wrapper" data-key=2>
+                                                <div class="wishlist">
+                                                    Add To wishlist
+                                                </div>
+                                            </div>
+                                            <i data-heartKey=2 class="fas fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="map-view pt-2">
+                                        <i class="fas fa-map-marker-alt mr-2"></i> View On Map</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3rd item -->
+                        <div class="col-md-6 col-sm-6">
+                            <div class="package-card">
+                                <div class="package-image">
+                                    <div class="bg-overlay"></div>
+                                    <div class="ribbon-red">
+                                        <span></span>
+                                        <div class="ribbon-text">POPULAR</div>
+                                    </div>
+                                    <div class="image-wrapper">
+                                        <img src="../../photos/tours/tour_box_3.jpg" alt="" class="package-image">
+                                    </div>
+                                    <div class="short-info">
+                                        <div class="name">
+                                            <i class="fas fa-home"></i> Historic
+                                        </div>
+                                        <div class="price">
+                                            $45
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="package-body">
+                                    <div class="package-comment">
+                                        <div class="package-left">
+                                            <h3>
+                                                <strong>ARC TRIOMPHE
+                                                    <span>TOUR</span>
+                                                </strong>
+                                            </h3>
+                                            <ul class="ratings">
+                                                <li>
+                                                    <i class="far fa-smile bg-yellow"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-smile bg-yellow ml-2"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-smile bg-yellow ml-2"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-smile bg-yellow ml-2"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-smile ml-2 "></i>
+                                                </li>
+                                                <li class="total-comments ml-2 text-muted">(74)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="package-wishlist">
+                                            <div class="wishlist-wrapper" data-key=3>
+                                                <div class="wishlist">
+                                                    Add To wishlist
+                                                </div>
+                                            </div>
+                                            <i data-heartKey=3 class="fas fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="map-view pt-2">
+                                        <i class="fas fa-map-marker-alt mr-2"></i> View On Map</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4th item -->
+                        <div class="col-md-6 col-sm-6">
+                            <div class="package-card">
+                                <div class="package-image">
+                                    <div class="bg-overlay"></div>
+                                    <div class="ribbon-red">
+                                        <span></span>
+                                        <div class="ribbon-text">POPULAR</div>
+                                    </div>
+                                    <div class="image-wrapper">
+                                        <img src="../../photos/tours/tour_box_4.jpg" alt="" class="package-image">
+                                    </div>
+                                    <div class="short-info">
+                                        <div class="name">
+                                            <i class="fas fa-home"></i> Historic
+                                        </div>
+                                        <div class="price">
+                                            $45
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="package-body">
+                                    <div class="package-comment">
+                                        <div class="package-left">
+                                            <h3>
+                                                <strong>ARC TRIOMPHE
+                                                    <span>TOUR</span>
+                                                </strong>
+                                            </h3>
+                                            <ul class="ratings">
+                                                <li>
+                                                    <i class="far fa-smile bg-yellow"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-smile bg-yellow ml-2"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-smile bg-yellow ml-2"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-smile bg-yellow ml-2"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-smile ml-2 "></i>
+                                                </li>
+                                                <li class="total-comments ml-2 text-muted">(74)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="package-wishlist">
+                                            <div class="wishlist-wrapper" data-key=4>
+                                                <div class="wishlist">
+                                                    Add To wishlist
+                                                </div>
+                                            </div>
+                                            <i data-heartKey=4 class="fas fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="map-view pt-2">
+                                        <i class="fas fa-map-marker-alt mr-2"></i> View On Map</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5th item -->
+                        <div class="col-md-6 col-sm-6">
+                            <div class="package-card">
+                                <div class="package-image">
+                                    <div class="bg-overlay"></div>
+                                    <div class="ribbon-green">
+                                        <span></span>
+                                        <div class="ribbon-text">TOP RATE</div>
+                                    </div>
+                                    <div class="image-wrapper">
+                                        <img src="../../photos/tours/tour_box_5.jpg" alt="" class="package-image">
+                                    </div>
+                                    <div class="short-info">
+                                        <div class="name">
+                                            <i class="fas fa-home"></i> Historic
+                                        </div>
+                                        <div class="price">
+                                            $45
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="package-body">
+                                    <div class="package-comment">
+                                        <div class="package-left">
+                                            <h3>
+                                                <strong>ARC TRIOMPHE
+                                                    <span>TOUR</span>
+                                                </strong>
+                                            </h3>
+                                            <ul class="ratings">
+                                                <li>
+                                                    <i class="far fa-smile bg-yellow"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-smile bg-yellow ml-2"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-smile bg-yellow ml-2"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-smile bg-yellow ml-2"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-smile ml-2 "></i>
+                                                </li>
+                                                <li class="total-comments ml-2 text-muted">(74)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="package-wishlist">
+                                            <div class="wishlist-wrapper" data-key=5>
+                                                <div class="wishlist">
+                                                    Add To wishlist
+                                                </div>
+                                            </div>
+                                            <i data-heartKey=5 class="fas fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="map-view pt-2">
+                                        <i class="fas fa-map-marker-alt mr-2"></i> View On Map</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 6th item -->
+                       
+                        <div class="col-md-6 col-sm-6">
+                            <div class="package-card">
+                                <div class="package-image">
+                                    <div class="bg-overlay"></div>
+                                    <div class="ribbon-green">
+                                        <span></span>
+                                        <div class="ribbon-text">TOP RATE</div>
+                                    </div>
+                                    <div class="image-wrapper">
+                                        <img src="../../photos/tours/tour_box_1.jpg" alt="" class="package-image">
+                                    </div>
+                                    <div class="short-info">
+                                        <div class="name">
+                                            <i class="fas fa-home"></i> Historic
+                                        </div>
+                                        <div class="price">
+                                            $45
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="package-body">
+                                    <div class="package-comment">
+                                        <div class="package-left">
+                                            <h3>
+                                                <strong>ARC TRIOMPHE
+                                                    <span>TOUR</span>
+                                                </strong>
+                                            </h3>
+                                            <ul class="ratings">
+                                                <li>
+                                                    <i class="far fa-smile bg-yellow"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-smile bg-yellow ml-2"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-smile bg-yellow ml-2"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-smile bg-yellow ml-2"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="far fa-smile ml-2 "></i>
+                                                </li>
+                                                <li class="total-comments ml-2 text-muted">(74)</li>
+                                            </ul>
+                                        </div>
+                                        <div class="package-wishlist">
+                                            <div class="wishlist-wrapper" data-key=6>
+                                                <div class="wishlist">
+                                                    Add To wishlist
+                                                </div>
+                                            </div>
+                                            <i data-heartKey=6 class="fas fa-heart"></i>
+                                        </div>
+                                    </div>
+                                    <p class="map-view pt-2">
+                                        <i class="fas fa-map-marker-alt mr-2"></i> View On Map</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="pagination-wrapper">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#">Prev</a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Google Map -->
+                <div class="col-md-6 google-map">
+                    <div id="map" ></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+    <script src="../../scripts/tours/app.js"></script>
+</body>
+</html>
