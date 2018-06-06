@@ -22,3 +22,31 @@ scrollDowns.forEach((scrollDown,index)=>{
         scrollDownUl.classList.toggle('hide');
     })
 })
+
+// Forcing grid on 1000px. Since I am not using Sass
+
+const activities = document.querySelectorAll('.activities');
+
+console.log(activities);
+
+function onWindowResize(width){
+    activities.forEach(activity =>{
+        if(width < 1220 && activity.classList.contains('col-md-6')){
+            activity.classList.remove('col-md-6');
+            activity.classList.add('col-md-12');
+    
+        }
+        if(width>1220 && activity.classList.contains('col-md-12')){
+            activity.classList.remove('col-md-12');
+            activity.classList.add('col-md-6');
+        }
+    })
+    
+}
+
+window.addEventListener('resize',(event)=>{
+    const width = event.target.outerWidth;
+    onWindowResize(width);
+})
+
+onWindowResize(window.outerWidth)

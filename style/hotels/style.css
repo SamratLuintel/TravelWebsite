@@ -584,7 +584,7 @@ a .fa-chevron-down {
 }
 
 #hotel-activities .activity-card .activity-name{
-    font-size:22px;
+    font-size:21px;
     font-weight: 500;
     color:#444444;
 }
@@ -605,7 +605,7 @@ a .fa-chevron-down {
 
 #hotel-facilities{
     min-height:650px;
-    background:url(../../photos/bg/girl-swimming.jpg);
+    background:url('../../photos/bg/girl-swimming.jpg');
     position: relative;
     background-size: cover;
 }
@@ -614,6 +614,8 @@ a .fa-chevron-down {
     color:white;
     max-width:650px;
     text-align:center;
+    position: relative;
+    z-index:99;
     margin:0 auto;
     padding-top: 80px;
 }
