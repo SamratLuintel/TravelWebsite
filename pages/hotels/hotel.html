@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../libraries/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../style/hotels/style.css">
+    <link rel="stylesheet" href="../../style/hotels/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Side Navigation Menu on mobile screens -->
+    <ul id="side-menu" class="side-nav d-flex flex-column">
+        <li class="align-self-end">
+            <a href="#" class="btn-close" onclick="CloseSlideMenu()">&times;</a>
+        </li>
+        <li class="my-1">
+            <a href="#">HOME</a>
+        </li>
+        <li class="my-1">
+            <a href="#">TOUR</a>
+        </li>
+        <li class="my-1">
+            <a href="#">HOTELS</a>
+        </li>
+        <li class="my-1">
+            <p data-scrolldown="0" class="d-flex justify-content-between m-0">PACKAGES
+                <i class="fas fa-chevron-down mt-1"></i>
+            </p>
+            <ul class="d-flex flex-column hide" data-scrolldownUl="0">
+                <li>
+                    <a href="">Japan</a>
+                </li>
+                <li>
+                    <a href="">Asia</a>
+                </li>
+            </ul>
+        </li>
+        <li class="my-1">
+            <p data-scrolldown="1" class="d-flex justify-content-between m-0">PAGES
+                <i class="fas fa-chevron-down mt-1"></i>
+            </p>
+            <ul class="d-flex flex-column hide" data-scrolldownUl="1">
+                <li>
+                    <a href="">Japan</a>
+                </li>
+                <li>
+                    <a href="">Asia</a>
+                </li>
+            </ul>
+        </li>
+
+        <a href="#">Hotels
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </ul>
+
+
+
+    <!-- Header Area -->
+    <div class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="row justify-content-between separator">
+                    <div class="contact-us-section">
+                        <div class="call-to-action">
+                            <span>Contact Us</span>
+                            :
+                            <i class="fas fa-phone"></i> +9999587801 (Sunday - Friday : 9:00am - 5:00pm)
+                        </div>
+                    </div>
+                    <div class="social-section d-flex justify-content-end">
+                        <div class="social-icons">
+                            <ul>
+                                <li>
+                                    <i class="fab fa-facebook-f"></i>
+                                </li>
+                                <li>
+                                    <i class="fab fa-google-plus-g"></i>
+                                </li>
+                                <li>
+                                    <i class="fab fa-twitter"></i>
+                                </li>
+                                <li>
+                                    <i class="fab fa-pinterest"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="account ml-3">
+                            ACCOUNT
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-area">
+                <div class="row d-flex justify-content-between mt-md-4">
+                    <div class="brand-area">
+                        <div class="brand">
+                            <div class="brand-name">
+                                MountainTravel
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-area">
+                        <div class="basic-menu d-flex justify-content-end">
+                            <div id="navigation-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tour</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Hotels</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Packages
+                                            <i class="fas fa-chevron-down"></i>
+                                        </a>
+                                        <ul class="submenu">
+                                            <li class="subOption">
+                                                <a href="">SUBMENU 1</a>
+                                            </li>
+                                            <li class="subOption">
+                                                <a href="">SUBMENU 2</a>
+                                            </li>
+                                            <li class="subOption">
+                                                <a href="">SUBMENU 3</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">Pages
+                                            <i class="fas fa-chevron-down"></i>
+                                        </a>
+                                        <ul class="submenu">
+                                            <li class="subOption">
+                                                <a href="">About</a>
+                                            </li>
+                                            <li class="subOption">
+                                                <a href="">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span id="open-slider">
+                                <i class="fas fa-bars" onclick="OpenSlideMenu()"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Full-Page-BG -->
+    <section id="full-page-bg">
+        <div class="bg-overlay-3">
+            <div class="content-area">
+                <p class="text">SPARK THE IMAGINATION</p>
+                <h2>Unwind to the Relaxed <br> Beat</h2>
+                <div class="button">
+                    VISIT OUR RESORT
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Us -->
+    <section id="about-services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="image-wrapper">
+                        <img src="../../photos/hotels/1-service.jpg" alt="">
+                        <div class="bg-overlay-5">
+                            <div class="content-wrapper">
+                                    LUXURY ACCOMODATION
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="image-wrapper">
+                        <img src="../../photos/hotels/2-service.jpg" alt="">
+                        <div class="bg-overlay-5">
+                            <div class="content-wrapper">
+                               SPA & WELLNESS
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="image-wrapper">
+                        <img src="../../photos/hotels/3-service.jpg" alt="">
+                        <div class="bg-overlay-5">
+                            <div class="content-wrapper">
+                                FINE WINE & DINE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <p class="theme-text text-muted mb-3">
+                    A SERENE OASIS IN THE HEART OF YOUR CITY
+                </p>
+                <h2 class="caption-text mb-4">
+                    Legendary style makes it one of the <br> most prestigious Hotel
+                </h2>
+                <p class="theme-text mb-5">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat architecto nobis, excepturi alias assumenda asperiores sapiente porro dolore non, quae blanditiis atque tempore iure sequi ducimus? Praesentium, repudiandae quos. Cumque hic tempore quidem quam consequatur natus quisquam eius fugiat sapiente esse maxime fugit dolorem, quo dicta optio veritatis harum! Sint.
+                </p>
+                <div class="button">
+                    MORE ABOUT US
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <!-- Accomodation -->
+    <section id="accomodation">
+        <h3 class="head-text">
+            Luxury Accomodation
+        </h3>
+        <p class="caption-text text-muted">
+                Duis metus sem, aliquet vitae mi eget, vehicula vehicula enim. In consectetur velit <br> lectus sollicitudin.
+        </p>
+        <div class="container mt-5">
+            <div class="row">
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="hotel-card">
+                        <div class="image-wrapper">
+                            <img src="../../photos/hotels/1-accomodation.jpg" alt="">
+                            <div class="price-tag">
+                                <span class="price-val">$900.00</span>
+                                <div class="package-shift">Night</div>
+                            </div>
+                        </div>
+                        <div class="package-body">
+                            <h3 class="title">Deluxe Room</h3>
+                            <ul class="features">
+                                <li class="text-muted">Top</li>
+                                <li class="ml-3 text-muted">Scenery</li>
+                                <li class="ml-3 text-muted">Attached Bathroom</li>
+                            </ul>
+                            <div class="price mt-4">
+                                FROM:  <span class="title-price">$900.00 / NIGHT</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="hotel-card">
+                        <div class="image-wrapper">
+                            <img src="../../photos/hotels/2-accomodation.jpg" alt="">
+                            <div class="price-tag">
+                                <span class="price-val">$900.00</span>
+                                <div class="package-shift">Night</div>
+                            </div>
+                        </div>
+                        <div class="package-body">
+                            <h3 class="title">Deluxe Room</h3>
+                            <ul class="features">
+                                <li class="text-muted">Top</li>
+                                <li class="ml-3 text-muted">Scenery</li>
+                                <li class="ml-3 text-muted">Attached Bathroom</li>
+                            </ul>
+                            <div class="price mt-4">
+                                FROM:
+                                <span class="title-price">$900.00 / NIGHT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="hotel-card">
+                        <div class="image-wrapper">
+                            <img src="../../photos/hotels/3-accomodation.jpg" alt="">
+                            <div class="price-tag">
+                                <span class="price-val">$900.00</span>
+                                <div class="package-shift">Night</div>
+                            </div>
+                        </div>
+                        <div class="package-body">
+                            <h3 class="title">Deluxe Room</h3>
+                            <ul class="features">
+                                <li class="text-muted">Top</li>
+                                <li class="ml-3 text-muted">Scenery</li>
+                                <li class="ml-3 text-muted">Attached Bathroom</li>
+                            </ul>
+                            <div class="price mt-4">
+                                FROM:
+                                <span class="title-price">$900.00 / NIGHT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="view-rooms-btn mt-5">
+            VIEW ALL ROOMS
+        </div>
+    </section>
+
+
+    <!-- Service Wrapper -->
+
+    <section id="service-wrapper">
+        <div class="bg-overlay-white-3">
+            <div class="container d-flex justify-content-end">
+                <div class="content">
+                    <p class="content-text">
+                        WITH BESPOKE SERVICES AND REJUVENATE HOSPITALITY
+                    </p>
+                    <h3 class="head-text">
+                        New Dimensions of Luxury &  caters to all needs of a modern traveler
+                    </h3>
+                    <div class="button mt-4">
+                        EXPLORE OUR HOTEL
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOTEL ACTIVITIES -->
+
+    <section id="hotel-activities">
+        <div class="container">
+            <div class="section-heading">
+                <h3 class="head-text">
+                    Activities in Our Hotel
+                </h3>
+                <p class="caption-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis deleniti fuga blanditiis voluptate reiciendis quasi eos modi impedit voluptatem ducimus!
+                </p>
+            </div>
+            <div class="row mt-5 px-4">
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="activity-card">
+                        <div class="image-section">
+                            <img src="../../photos/hotels/activity-1.jpg" alt="">
+                        </div>
+                        <div class="content-section">
+                            <div class="activity-name">
+                                ETCHED IN BLUE HORIZON
+                            </div>
+                            <div class="activity-price">
+                                29 Days / $200
+                            </div>
+                            <div class="read-more">
+                                READ MORE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="activity-card">
+                        <div class="image-section">
+                            <img src="../../photos/hotels/activity-1.jpg" alt="">
+                        </div>
+                        <div class="content-section">
+                            <div class="activity-name">
+                                ETCHED IN BLUE HORIZON
+                            </div>
+                            <div class="activity-price">
+                                29 Days / $200
+                            </div>
+                            <div class="read-more">
+                                READ MORE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="activity-card">
+                        <div class="image-section">
+                            <img src="../../photos/hotels/activity-1.jpg" alt="">
+                        </div>
+                        <div class="content-section">
+                            <div class="activity-name">
+                                ETCHED IN BLUE HORIZON
+                            </div>
+                            <div class="activity-price">
+                                29 Days / $200
+                            </div>
+                            <div class="read-more">
+                                READ MORE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="activity-card">
+                        <div class="image-section">
+                            <img src="../../photos/hotels/activity-1.jpg" alt="">
+                        </div>
+                        <div class="content-section">
+                            <div class="activity-name">
+                                ETCHED IN BLUE HORIZON
+                            </div>
+                            <div class="activity-price">
+                                29 Days / $200
+                            </div>
+                            <div class="read-more">
+                                READ MORE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotel Facilities -->
+    <section id="hotel-facilities">
+        <div class="bg-overlay-7">
+            <div class="section-heading">
+                <h3 class="head-text">Experience & Indulge in Activities</h3>
+                <p class="caption-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, illo!Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iste excepturi molestias culpa? Architecto, tempore animi ad repudiandae officia provident!</p>
+            </div>
+            <div class="container mt-5">
+                <div class="row">
+                    
+                    <div class="col-md-4">
+                        <div class="features">
+                            <div class="feature-icon">
+                                <img src="../../photos/icon/drink.png" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <div class="s-feature-title">
+                                    WELCOME DRINK
+                                </div>
+                                <div class="s-feature-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque veniam culpa at nihil laborum iste quasi
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="features">
+                            <div class="feature-icon">
+                                <img src="../../photos/icon/swpool.png" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <div class="s-feature-title">
+                                    SWIMMING POOL
+                                </div>
+                                <div class="s-feature-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque veniam culpa at nihil laborum iste quasi
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="features">
+                            <div class="feature-icon">
+                                <img src="../../photos/icon/massage.png" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <div class="s-feature-title">
+                                    BODY MASSAGE
+                                </div>
+                                <div class="s-feature-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque veniam culpa at nihil laborum iste quasi
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="features">
+                            <div class="feature-icon">
+                                <img src="../../photos/icon/towel.png" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <div class="s-feature-title">
+                                    LAUNDRY SERVICE
+                                </div>
+                                <div class="s-feature-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque veniam culpa at nihil laborum iste quasi
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="features">
+                            <div class="feature-icon">
+                                <img src="../../photos/icon/dualDrink.png" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <div class="s-feature-title">
+                                    24 HRS BAR
+                                </div>
+                                <div class="s-feature-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque veniam culpa at nihil laborum iste quasi
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="features">
+                            <div class="feature-icon">
+                                <img src="../../photos/icon/bathtub.png" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <div class="s-feature-title">
+                                    PRIVATE BATHROOM
+                                </div>
+                                <div class="s-feature-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque veniam culpa at nihil laborum iste quasi
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Gallery Area -->
+
+    <section id="gallery">
+        <div class="section-heading">
+            <h3 class="head-text">
+                Hotel Gallery
+            </h3>
+            <p class="caption-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt explicabo debitis magnam officia Lorem ipsum dolor sit.
+            </p>
+        </div>
+        <div class="container-fluid pt-4 mt-5">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="image-wrapper">
+                        <img src="../../photos/gallery/hotels-1.jpg" alt="">
+                        <span class="plus">+</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="image-wrapper">
+                        <img src="../../photos/gallery/hotels-2.jpg" alt="">
+                        <span class="plus">+</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="image-wrapper">
+                        <img src="../../photos/gallery/hotels-3.jpg" alt="">
+                        <span class="plus">+</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="image-wrapper">
+                        <img src="../../photos/gallery/hotels-4.jpg" alt="">
+                        <span class="plus">+</span>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="image-wrapper">
+                        <img src="../../photos/gallery/hotels-5.jpg" alt="">
+                        <span class="plus">+</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="image-wrapper">
+                        <img src="../../photos/gallery/hotels-6.jpg" alt="">
+                        <span class="plus">+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact-us">
+        <div class="footer-top-area">
+            <div class="bg-overlay-3"></div>
+            <div class="container mt-5 pt-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-widget">
+                            <h4>Contact Us</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt illo nobis
+                            </p>
+                            <ul class="footer-social-icons">
+                                <li>
+                                    <i class="fab fa-facebook-f"></i>
+                                </li>
+                                <li>
+                                    <i class="fab fa-google-plus-g"></i>
+                                </li>
+                                <li>
+                                    <i class="fab fa-twitter"></i>
+                                </li>
+                                <li>
+                                    <i class="fab fa-pinterest"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-widget">
+                            <h4>NEWS</h4>
+                            <ul class="footer-link">
+                                <li>
+                                    <a href="#">Subscriptions</a>
+                                </li>
+                                <li>
+                                    <a href="#">New Apps</a>
+                                </li>
+                                <li>
+                                    <a href="#">Download Now</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="footer-widget">
+                            <h4>COMPANY</h4>
+                            <ul class="footer-link">
+                                <li>
+                                    <a href="#">Screenshot</a>
+                                </li>
+                                <li>
+                                    <a href="#">Features</a>
+                                </li>
+                                <li>
+                                    <a href="#">Price</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-widget">
+                            <h4>RESOURCES</h4>
+                            <ul class="footer-link">
+                                <li>
+                                    <a href="#">Support</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Terms</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="../../scripts/hotels/app.js"></script>
+</body>
+
+</html>

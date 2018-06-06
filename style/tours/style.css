@@ -1,458 +1,458 @@
-    /* CSS INDEX
-
-    Side-Navigation
-    .Header Area 
-    Tours Packages   
-    Tours Packages Ribbon
-    */
-
-    a {
-        text-decoration: none !important;
-    }
-
-    /* Side-Navigation */
-
-    .side-nav {
-        position: fixed;
-        background-color: #222222;
-        transition: width 0.3s;
-        overflow: hidden;
-        width: 0px;
-        height: 100vh;
-        z-index: 99;
-        padding: 0px;
-    }
-
-    .side-nav a {
-        background-color: transparent;
-        color: rgba(255, 255, 255, 0.4);
-        font-size: 18px;
-    }
-
-    .side-nav li {
-        list-style: none;
-    }
-
-    .side-nav li {
-        background-color: transparent;
-        color: rgba(255, 255, 255, 0.4);
-        font-size: 18px;
-    }
-
-    .side-nav p {
-        cursor: pointer;
-        margin: none;
-        padding: none;
-    }
-
-    .side-nav p:hover {
-        color: #F78536;
-        cursor: pointer;
-    }
-
-    .side-nav li i {
-        font-size: 14px;
-    }
-
-    .side-nav a:hover {
-        color: #F78536;
-        cursor: pointer;
-    }
-
-    .open-slider {
-        cursor: pointer;
-    }
-
-    .hide {
-        display: none !important;
-    }
-
-    /* Header Area */
-
-    .header {
-        height: 140px;
-        background-color: white;
-        box-sizing: border-box;
-        padding: 30px;
-        padding-bottom:40px;;
-        margin-bottom:20px;
-        font-family: "Roboto";
-    }
-
-    .header a {
-        text-decoration: none !important;
-    }
-
-    .header li:hover {
-        color: #F96D71;
-    }
-
-    .header hr {
-        margin-top: -0.3rem;
-        margin-bottom: 2rem;
-    }
-
-    .header-top {
-        font-size: 14px;
-        line-height: 21px;
-        color: #5d6c83;
-    }
-
-    .separator {
-        border-bottom: 1px solid #e5e5e5;
-    }
-
-    .social-icons ul {
-        list-style: none;
-        display: flex;
-    }
-
-    .social-icons ul li {
-        margin-left: 10px;
-        margin-right: 10px;
-        cursor: pointer;
-    }
-
-    #navigation-menu>ul {
-        display: flex;
-        list-style: none;
-    }
-
-    #navigation-menu>ul>li {
-        margin: 10px;
-        position: relative;
-    }
-
-    #navigation-menu ul li a {
-        color: #1b1b1b;
-        text-transform: uppercase;
-        transition: 0.3s;
-        font-size: 14px;
-    }
-
-    #navigation-menu a:hover {
-        color: #F96D71;
-    }
-
-    .submenu {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        position: absolute;
-        margin-top: 38px;
-        width: 200px;
-        transition: height 0.3s;
-        z-index:999;
-    }
-
-    .submenu li {
-        background-color: #FFFFFF;
-        padding: 10px;
-        margin-bottom: 1px;
-    }
-
-    li .submenu {
-        height: 0;
-        overflow: hidden;
-    }
-
-    li:hover .submenu {
-        height: 200px;
-    }
-
-    a .fa-chevron-down {
-        font-size: 13px;
-    }
-
-    #open-slider {
-        cursor: pointer;
-        display: none;
-    }
-
-    /* Tours Packages */
-
-    .bg-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.2);
-    }
-
-    #tours {
-        width: 100%;
-    }
-
-    .tours-packages{
-        overflow: auto;
-        height:90vh;
-        padding-top:30px;
-        background-color:#F9F9F9;
-        border-top:1px solid #DDDDDD;
-    }
-
-    .tours-packages > row{
-        border-bottom:1px solid #DDDDDD;
-    }
-    .tours-packages .package-image {
-        width: 100%;
-        position: relative;
-    }
-
-    .tours-packages .package-card{
-        margin-bottom:30px;
-        background-color: white;
-        box-shadow: 0 0 10px rgba(0,0,0,.3);
-    }
-    .tours-packages .package-image .image-wrapper{
-        width: 100%;
-        overflow: hidden;
-    }
-    .tours-packages .package-image img {
-        width: 100%;
-        transition: 0.3s;
-    }
-
-    .tours-packages .package-image img:hover{
-        transform: scale(1.3);
-    }
-    .tours-packages .package-card .short-info {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        background: url('../../photos/bg/shadow_tour.png');
-        height: 40px;
-        color: white;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .tours-packages .package-card .short-info .name i {
-        font-size: 19px;
-        margin-right: 15px;
-    }
-
-    .tours-packages .package-card .short-info .name {
-        margin-top: 8px;
-        padding: 0px 10px;
-        font-size: 12px;
-    }
-
-    .tours-packages .package-card .short-info .price {
-        margin-top: -6px;
-        margin-right: 5px;
-        font-size: 28px;
-        font-family: "Montserrat";
-        font-weight: 700;
-    }
-
-    .tours-packages .package-card .package-body{
-        background-color: white;
-        padding:5px 5px 5px 15px;
-    }
-
-    .tours-packages .package-card .package-body .package-comment {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid #EDEDED;
-    }
-
-    .tours-packages .package-body .map-view i {
-        color:#E04F67;
-    }
-    .tours-packages .package-comment .package-left h3 {
-        font-size: 19px;
-        color:#333333;
-    }
-
-    .tours-packages .package-comment .package-left h3 span{
-        font-weight: normal;
-    }
-
-    .tours-packages .package-comment .package-left .ratings{
-        list-style: none;
-        padding:0;    
-        display:flex;
-    }
-
-    .bg-yellow{
-       color: #FFAB2E;
-    }
-    .tours-packages .package-wishlist i {
-        font-size: 40px;
-        color: #DE493A;
-        cursor: pointer;
-    }
-
-    .tours-packages .package-wishlist .wishlist-wrapper {
-        transition: 0.3s;
-        transform: scaleX(0);
-    }
-
-    .wishlist-expand {
-        transform: scaleX(1) !important;
-    }
-
-    .tours-packages .package-wishlist .wishlist {
-        position: absolute;
-        top: -130px;
-        width: 100px;
-        height: 100px;
-        left: -50px;
-        color:white;
-        box-sizing: border-box;
-        padding:25px 20px;
-        background-color: #EC4E3E;
-    }
-
-    .tours-packages .package-wishlist .wishlist:before {
-        content: '';
-        position: absolute;
-        border-right: 20px solid #EC4E3E;
-        border-bottom: 20px solid transparent;
-        bottom: -20px;
-        left: 40px;
-    }
-
-    .tours-packages .pagination-wrapper{
-      display: flex;
-      justify-content: center;
-    }
-
-    .pagination>li>a{
-        color:#888;
-        transition:0.3s;
-    }
-
-    .pagination>li>a:hover{
-        color:black;
-    }
-
-    /* Tours packages Ribbon */
-
-    .ribbon-red {
-        position: absolute;
-        top: 8px;
-        left: -6px;
-        width: 50px;
-        height: 20px;
-        box-sizing: border-box;
-        color: white;
-        transform: rotate(-45deg);
-        background-color: #DF493A;
-        z-index: 90;
-    }
-
-    .ribbon-text {
-        position: absolute;
-        font-size: 10px;
-        top: 3px;
-        left: 4px;
-        font-weight: bold;
-    }
-
-    .ribbon-red:before {
-        content: '';
-        position: absolute;
-        left: -20px;
-        border-left: 10px solid transparent;
-        border-right: 10px solid #DF493A;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid #DF493A;
-    }
-
-    .ribbon-red:after {
-        content: '';
-        position: absolute;
-        right: -20px;
-        border-left: 10px solid #DF493A;
-        border-right: 10px solid transparent;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid #DF493A;
-    }
-
-    .ribbon-red span:before {
-        content: '';
-        position: absolute;
-        top: 20px;
-        left: -20px;
-        border-left: 10px solid #A3362A;
-        border-bottom: 10px solid transparent;
-    }
-
-    .ribbon-red span:after {
-        content: '';
-        position: absolute;
-        top: 20px;
-        right: -20px;
-        border-left: 10px solid transparent;
-        border-top: 10px solid #A3362A;
-    }
-
-    /* Ribbon green */
-
-    .ribbon-green {
-        position: absolute;
-        top: 8px;
-        left: -6px;
-        width: 50px;
-        height: 20px;
-        box-sizing: border-box;
-        color: white;
-        transform: rotate(-45deg);
-        background-color: #7AA80A;
-        z-index: 90;
-    }
-
-    .ribbon-text {
-        position: absolute;
-        font-size: 10px;
-        top: 3px;
-        left: 4px;
-        font-weight: bold;
-    }
-
-    .ribbon-green:before {
-        content: '';
-        position: absolute;
-        left: -20px;
-        border-left: 10px solid transparent;
-        border-right: 10px solid #7AA80A;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid #7AA80A;
-    }
-
-    .ribbon-green:after {
-        content: '';
-        position: absolute;
-        right: -20px;
-        border-left: 10px solid #7AA80A;
-        border-right: 10px solid transparent;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid #7AA80A;
-    }
-
-    .ribbon-green span:before {
-        content: '';
-        position: absolute;
-        top: 20px;
-        left: -20px;
-        border-left: 10px solid #628907;
-        border-bottom: 10px solid transparent;
-    }
-
-    .ribbon-green span:after {
-        content: '';
-        position: absolute;
-        top: 20px;
-        right: -20px;
-        border-left: 10px solid transparent;
-        border-top: 10px solid #628907;
-    }
-
-    #map{
-        width:100%;
-        height:100%;
-    }
+/* CSS INDEX
+
+Side-Navigation
+.Header Area 
+Tours Packages   
+Tours Packages Ribbon
+*/
+
+a {
+    text-decoration: none !important;
+}
+
+/* Side-Navigation */
+
+.side-nav {
+    position: fixed;
+    background-color: #222222;
+    transition: width 0.3s;
+    overflow: hidden;
+    width: 0px;
+    height: 100vh;
+    z-index: 99;
+    padding: 0px;
+}
+
+.side-nav a {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 18px;
+}
+
+.side-nav li {
+    list-style: none;
+}
+
+.side-nav li {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 18px;
+}
+
+.side-nav p {
+    cursor: pointer;
+    margin: none;
+    padding: none;
+}
+
+.side-nav p:hover {
+    color: #F78536;
+    cursor: pointer;
+}
+
+.side-nav li i {
+    font-size: 14px;
+}
+
+.side-nav a:hover {
+    color: #F78536;
+    cursor: pointer;
+}
+
+.open-slider {
+    cursor: pointer;
+}
+
+.hide {
+    display: none !important;
+}
+
+/* Header Area */
+
+.header {
+    height: 140px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 30px;
+    padding-bottom:40px;;
+    margin-bottom:20px;
+    font-family: "Roboto";
+}
+
+.header a {
+    text-decoration: none !important;
+}
+
+.header li:hover {
+    color: #F96D71;
+}
+
+.header hr {
+    margin-top: -0.3rem;
+    margin-bottom: 2rem;
+}
+
+.header-top {
+    font-size: 14px;
+    line-height: 21px;
+    color: #5d6c83;
+}
+
+.separator {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.social-icons ul {
+    list-style: none;
+    display: flex;
+}
+
+.social-icons ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#navigation-menu>ul {
+    display: flex;
+    list-style: none;
+}
+
+#navigation-menu>ul>li {
+    margin: 10px;
+    position: relative;
+}
+
+#navigation-menu ul li a {
+    color: #1b1b1b;
+    text-transform: uppercase;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+#navigation-menu a:hover {
+    color: #F96D71;
+}
+
+.submenu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    position: absolute;
+    margin-top: 38px;
+    width: 200px;
+    transition: height 0.3s;
+    z-index:999;
+}
+
+.submenu li {
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 1px;
+}
+
+li .submenu {
+    height: 0;
+    overflow: hidden;
+}
+
+li:hover .submenu {
+    height: 200px;
+}
+
+a .fa-chevron-down {
+    font-size: 13px;
+}
+
+#open-slider {
+    cursor: pointer;
+    display: none;
+}
+
+/* Tours Packages */
+
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#tours {
+    width: 100%;
+}
+
+.tours-packages{
+    overflow: auto;
+    height:90vh;
+    padding-top:30px;
+    background-color:#F9F9F9;
+    border-top:1px solid #DDDDDD;
+}
+
+.tours-packages > row{
+    border-bottom:1px solid #DDDDDD;
+}
+.tours-packages .package-image {
+    width: 100%;
+    position: relative;
+}
+
+.tours-packages .package-card{
+    margin-bottom:30px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+.tours-packages .package-image .image-wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+.tours-packages .package-image img {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.tours-packages .package-image img:hover{
+    transform: scale(1.3);
+}
+.tours-packages .package-card .short-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: url('../../photos/bg/shadow_tour.png');
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tours-packages .package-card .short-info .name i {
+    font-size: 19px;
+    margin-right: 15px;
+}
+
+.tours-packages .package-card .short-info .name {
+    margin-top: 8px;
+    padding: 0px 10px;
+    font-size: 12px;
+}
+
+.tours-packages .package-card .short-info .price {
+    margin-top: -6px;
+    margin-right: 5px;
+    font-size: 28px;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+
+.tours-packages .package-card .package-body{
+    background-color: white;
+    padding:5px 5px 5px 15px;
+}
+
+.tours-packages .package-card .package-body .package-comment {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.tours-packages .package-body .map-view i {
+    color:#E04F67;
+}
+.tours-packages .package-comment .package-left h3 {
+    font-size: 19px;
+    color:#333333;
+}
+
+.tours-packages .package-comment .package-left h3 span{
+    font-weight: normal;
+}
+
+.tours-packages .package-comment .package-left .ratings{
+    list-style: none;
+    padding:0;    
+    display:flex;
+}
+
+.bg-yellow{
+    color: #FFAB2E;
+}
+.tours-packages .package-wishlist i {
+    font-size: 40px;
+    color: #DE493A;
+    cursor: pointer;
+}
+
+.tours-packages .package-wishlist .wishlist-wrapper {
+    transition: 0.3s;
+    transform: scaleX(0);
+}
+
+.wishlist-expand {
+    transform: scaleX(1) !important;
+}
+
+.tours-packages .package-wishlist .wishlist {
+    position: absolute;
+    top: -130px;
+    width: 100px;
+    height: 100px;
+    left: -50px;
+    color:white;
+    box-sizing: border-box;
+    padding:25px 20px;
+    background-color: #EC4E3E;
+}
+
+.tours-packages .package-wishlist .wishlist:before {
+    content: '';
+    position: absolute;
+    border-right: 20px solid #EC4E3E;
+    border-bottom: 20px solid transparent;
+    bottom: -20px;
+    left: 40px;
+}
+
+.tours-packages .pagination-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.pagination>li>a{
+    color:#888;
+    transition:0.3s;
+}
+
+.pagination>li>a:hover{
+    color:black;
+}
+
+/* Tours packages Ribbon */
+
+.ribbon-red {
+    position: absolute;
+    top: 8px;
+    left: -6px;
+    width: 50px;
+    height: 20px;
+    box-sizing: border-box;
+    color: white;
+    transform: rotate(-45deg);
+    background-color: #DF493A;
+    z-index: 90;
+}
+
+.ribbon-text {
+    position: absolute;
+    font-size: 10px;
+    top: 3px;
+    left: 4px;
+    font-weight: bold;
+}
+
+.ribbon-red:before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #DF493A;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #DF493A;
+}
+
+.ribbon-red:after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    border-left: 10px solid #DF493A;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #DF493A;
+}
+
+.ribbon-red span:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    border-left: 10px solid #A3362A;
+    border-bottom: 10px solid transparent;
+}
+
+.ribbon-red span:after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    border-left: 10px solid transparent;
+    border-top: 10px solid #A3362A;
+}
+
+/* Ribbon green */
+
+.ribbon-green {
+    position: absolute;
+    top: 8px;
+    left: -6px;
+    width: 50px;
+    height: 20px;
+    box-sizing: border-box;
+    color: white;
+    transform: rotate(-45deg);
+    background-color: #7AA80A;
+    z-index: 90;
+}
+
+.ribbon-text {
+    position: absolute;
+    font-size: 10px;
+    top: 3px;
+    left: 4px;
+    font-weight: bold;
+}
+
+.ribbon-green:before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #7AA80A;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #7AA80A;
+}
+
+.ribbon-green:after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    border-left: 10px solid #7AA80A;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #7AA80A;
+}
+
+.ribbon-green span:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    border-left: 10px solid #628907;
+    border-bottom: 10px solid transparent;
+}
+
+.ribbon-green span:after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    border-left: 10px solid transparent;
+    border-top: 10px solid #628907;
+}
+
+#map{
+    width:100%;
+    height:100%;
+}

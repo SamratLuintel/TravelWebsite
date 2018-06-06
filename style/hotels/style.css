@@ -1,0 +1,780 @@
+/* CSS INDEX
+    Whole theme class
+    Side Navigation
+    Header Area
+    Full-Page-Bg
+    About Us
+    Accomodation
+    Service Wrapper
+    Hotel Activities
+    Hotel Facilities
+    Gallery
+    Contact Us
+*/
+
+/* Whole Theme Class */
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+.bg-overlay-white-3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bg-overlay-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bg-overlay-5{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-overlay-7{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+a {
+    text-decoration: none !important;
+}
+
+/* Side-Navigation */
+
+.side-nav {
+    position: fixed;
+    background-color: #222222;
+    transition: width 0.3s;
+    overflow: hidden;
+    width: 0px;
+    height: 100vh;
+    z-index: 99;
+    padding: 0px;
+}
+
+.side-nav a {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 18px;
+}
+
+.side-nav li {
+    list-style: none;
+}
+
+.side-nav li {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 18px;
+}
+
+.side-nav p {
+    cursor: pointer;
+    margin: none;
+    padding: none;
+}
+
+.side-nav p:hover {
+    color: #F78536;
+    cursor: pointer;
+}
+
+.side-nav li i {
+    font-size: 14px;
+}
+
+.side-nav a:hover {
+    color: #F78536;
+    cursor: pointer;
+}
+
+.open-slider {
+    cursor: pointer;
+}
+
+.hide {
+    display: none !important;
+}
+
+/* Header Area */
+
+.header {
+    height: 200px;
+    background-color: white;
+    padding: 50px;
+    font-family: "Roboto";
+}
+
+.header a {
+    text-decoration: none !important;
+}
+
+.header li:hover {
+    color: #F96D71;
+}
+
+.header hr {
+    margin-top: -0.3rem;
+    margin-bottom: 2rem;
+}
+
+.header-top {
+    font-size: 14px;
+    line-height: 21px;
+    color: #5d6c83;
+}
+
+.separator {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.social-icons ul {
+    list-style: none;
+    display: flex;
+}
+
+.social-icons ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#navigation-menu>ul {
+    display: flex;
+    list-style: none;
+}
+
+#navigation-menu>ul>li {
+    margin: 10px;
+    position: relative;
+}
+
+#navigation-menu ul li a {
+    color: #1b1b1b;
+    text-transform: uppercase;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+#navigation-menu a:hover {
+    color: #F96D71;
+}
+
+.submenu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    position: absolute;
+    z-index: 999;
+    margin-top: 38px;
+    width: 200px;
+    transition: height 0.3s;
+}
+
+.submenu li {
+    background-color: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 1px;
+}
+
+li .submenu {
+    height: 0;
+    overflow: hidden;
+}
+
+li:hover .submenu {
+    height: 200px;
+}
+
+a .fa-chevron-down {
+    font-size: 13px;
+}
+
+#open-slider {
+    cursor: pointer;
+    display: none;
+}
+
+/* Full Page BG */
+
+#full-page-bg {
+    height: 700px;
+    background: url('../../photos/bg/hotelbg.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+#full-page-bg .content-area {
+    padding-top: 190px;
+    text-align: center;
+    color: white;
+}
+
+#full-page-bg .content-area h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 55px;
+}
+
+#full-page-bg .content-area .button {
+    background-color: #F9676B;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 14px 20px;
+    width: 180px;
+    height: 50px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#full-page-bg .content-area .button:hover {
+    background-color: white;
+    color: #F9676B;
+}
+
+/* About Us */
+
+#about-services {
+    padding-top: 100px;
+    min-height: 1000px;
+    border-bottom:1px solid #F1F1F1;
+    padding-bottom:70px;
+}
+
+#about-services .image-wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom:30px;
+}
+
+#about-services .image-wrapper img {
+    width: 100%;
+    transition: 0.7s;
+}
+
+#about-services .image-wrapper:hover img {
+    transform: scale(1.2);
+}
+
+#about-services .image-wrapper .content-wrapper {
+    color: #F9F8F8;
+    text-align: center;
+    padding-top: 54%;
+    font-size: 20px;
+    transition:0.7s;
+}
+
+#about-services .image-wrapper .content-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    width:90%;
+    bottom: 15px;
+    margin: 0 auto;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transition:0.7s;
+    transform: scaleX(0);
+}
+
+#about-services .image-wrapper .content-wrapper:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    width:90%;
+    bottom: 15px;
+    margin: 0 auto;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    transition:0.7s;
+    transform: scaleY(0);
+}
+
+#about-services .image-wrapper:hover .content-wrapper:before{
+    transform: scaleX(1);
+}
+
+#about-services .image-wrapper:hover .content-wrapper:after{
+    transform: scaleY(1);
+}
+
+#about-services .image-wrapper:hover .content-wrapper{
+    padding-top:48%;
+}
+
+#about-services .main-content{
+    text-align:center;
+    padding-top:100px;
+}
+
+#about-services .main-content .caption-text{
+    font-size:40px;
+}
+
+#about-services .main-content .theme-text{
+    max-width:700px;
+    margin:0 auto;
+    font-size:17px;
+    line-height: 1.7;
+    color:#6a6560;
+}
+
+#about-services .main-content .button{
+    box-sizing: border-box;
+    width:130px;
+    height:50px;
+    padding:13px 0;
+    font-size:14px;
+    margin:0 auto;
+    background-color: #F9676B;
+    color:white;
+    cursor: pointer;
+    transition:0.3s;
+}
+
+#about-services .main-content .button:hover{
+    background-color: white;
+    color:#F9676B;
+    border:1px solid black;
+}
+
+/* Accomodation */
+
+#accomodation{
+    min-height:1000px;
+    text-align: center;
+    padding-top:100px;
+    padding-bottom: 80px;
+}
+
+#accomodation .head-text{
+    font-size:40px;
+}
+
+#accomodation .hotel-card .image-wrapper{
+    width:100%;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+#accomodation .hotel-card .image-wrapper img{
+    width: 100%;
+}
+
+#accomodation .hotel-card .image-wrapper .price-tag {
+    position: absolute;
+    bottom:0px;
+    right:0;
+    border-left: 150px solid transparent;
+    border-bottom: 150px solid #d46e4e;
+    z-index:90;
+    opacity:1;
+    transition:0.2s;
+    color:red;
+    font-size:30px;
+}
+
+#accomodation .hotel-card .image-wrapper:hover .price-tag {
+    transform: scale(1.1);
+    transform-origin: bottom right;
+    user-select: none;
+}
+
+#accomodation .hotel-card .price-tag .price-val{
+    position: absolute;
+    top:80px;
+    right:5px;
+    color:white;
+    font-size:22px;
+    border-bottom:1px solid white;
+    user-select: none;
+}
+
+#accomodation .hotel-card .price-tag .package-shift{
+    position: absolute;
+    top:115px;
+    right:21px;
+    color:white;
+    font-size:18px;
+}
+
+#accomodation .package-body{
+    padding:30px 10px 20px 20px;
+    user-select: none;
+}
+
+#accomodation .package-body .title{
+    font-size:29px;
+    text-align: left;
+}
+
+#accomodation .package-body .features{
+    display: flex;
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+#accomodation .package-body .price{
+    text-align: left;
+    color:#8A8A8A;
+}
+
+#accomodation .package-body .price .title-price{
+    color:#D46E4E;
+    font-weight: 700;
+}
+
+#accomodation .view-rooms-btn{
+    margin-top:80px;
+    background-color: #F9676B;
+    color:white;
+    box-sizing: border-box;
+    margin:0 auto;
+    font-size:18px;
+    padding-top:15px;
+    width:190px;
+    height:60px;
+    user-select: none;
+    cursor:pointer;
+    transition:0.5s;
+}
+
+#accomodation .view-rooms-btn:hover{
+    border:1px solid black;
+    background-color:white;
+    color:#F9676B;
+}
+
+/* Service Wrapper */
+
+#service-wrapper{
+    background: url('../../photos/bg/massage.jpg');
+    background-position: 70% 5px;
+    min-height:600px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+}
+
+#service-wrapper .content{
+    max-width:560px;
+    padding-top:17%;
+}
+
+#service-wrapper .content .content-text{
+    color:#3f3933;
+}
+
+#service-wrapper .content .head-text{
+    font-size:40px;
+}
+
+#service-wrapper  .content .button{
+    margin-top:80px;
+    background-color: #F9676B;
+    color:white;
+    box-sizing: border-box;
+    margin:0 auto;
+    font-size:14px;
+    padding-top:15px;
+    width:160px;
+    height:50px;
+    user-select: none;
+    cursor:pointer;
+    transition:0.5s;
+}
+
+#service-wrapper  .content .button:hover{
+    border:1px solid black;
+    background-color:white;
+    color:#F9676B;
+}
+
+/* HOTEL ACTIVITIES */
+
+#hotel-activities{
+    min-height: 1000px;
+    background-color: white;
+}
+
+#hotel-activities .section-heading{
+    max-width:620px;
+    text-align:center;
+    margin:0 auto;
+    padding-top:80px;
+}
+
+#hotel-activities .section-heading .head-text{
+    font-size:40px;
+    line-height: 1.7;
+}
+
+#hotel-activities .section-heading .caption-text{
+    color:#6a6560;
+}
+
+ #hotel-activities .activity-card{
+    width:100%;
+    display: table;
+    box-sizing: border-box;
+    margin-bottom:20px;
+}
+
+#hotel-activities .activity-card .image-section{
+    width:50%;
+    overflow:hidden;
+    display: table-cell;
+    vertical-align: top;
+} 
+
+#hotel-activities .activity-card .image-section img{
+    width:100%;
+    transition: 0.7s;
+}
+
+#hotel-activities .activity-card .image-section:hover img{
+    transform: scale(1.2);
+}
+
+#hotel-activities .activity-card .content-section{
+    width:50%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+    padding:15% 10%;
+    background-color:#E9E9E9;
+    position:relative;
+}
+
+#hotel-activities .activity-card .content-section:before{
+    content:'';
+    position:absolute;
+    left:-19px;
+    top:42%;
+    border-right:20px solid #E9E9E9;
+    border-top:20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+#hotel-activities .activity-card .activity-name{
+    font-size:22px;
+    font-weight: 500;
+    color:#444444;
+}
+
+#hotel-activities .activity-card .read-more{
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:100px;
+    height:70px;
+    background-color: #D46E4E;
+    box-sizing: border-box;
+    padding: 4% 9%;
+    font-size:15px;
+    color:white;
+}
+/* Hotel Facilities */
+
+#hotel-facilities{
+    min-height:650px;
+    background:url(../../photos/bg/girl-swimming.jpg);
+    position: relative;
+    background-size: cover;
+}
+
+#hotel-facilities .section-heading {
+    color:white;
+    max-width:650px;
+    text-align:center;
+    margin:0 auto;
+    padding-top: 80px;
+}
+
+#hotel-facilities .section-heading .head-text{
+    font-size:40px;
+}
+
+#hotel-facilities .section-heading .caption-text{
+    line-height: 1.7;
+}
+
+#hotel-facilities .features {
+    display: flex;
+    color:white;
+    margin-bottom:50px;
+}
+
+#hotel-facilities .features .feature-content{
+    margin-left:20px;
+    letter-spacing: 1px;
+}
+
+#hotel-facilities .features .s-feature-text{
+    margin-top:10px;
+    font-size:15px;
+}
+
+/* Gallery */
+#gallery img{
+    width:100%;
+}
+
+#gallery .section-heading{
+    padding-top:100px;
+    max-width:600px;
+    margin:0 auto;
+    text-align: center;
+}
+
+#gallery .head-text{
+    font-size:40px;
+    line-height: 2;
+}
+
+#gallery .caption-text{
+    color:#888480;
+    line-height:1.9;
+}
+
+#gallery .image-wrapper {
+    position: relative;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+#gallery img{
+    position: relative;
+    transition:0.7s;
+}
+
+#gallery .image-wrapper:before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.0);
+    transition:0.7s;
+    z-index:1;
+}
+
+#gallery .image-wrapper:hover img{
+    transform: scale(1.2);
+}
+
+#gallery .image-wrapper:hover:before{
+    background-color: rgba(0,0,0,0.3);
+}
+
+#gallery .image-wrapper .plus{
+    position: absolute;
+    z-index:99;
+    color:white;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    font-size:35px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.7s;
+    opacity: 0;
+    background-color: #d46e4e;
+    cursor:pointer;
+}
+
+#gallery .image-wrapper:hover .plus{
+    opacity:1;
+}
+
+/* Contact Us */
+#contact-us{
+    width:100%;
+    min-height:70vh;
+    background:url('../../photos/bg/pack-bg.jpg');
+    position: relative;
+    margin-top:100px;
+}
+#contact-us ul{
+    list-style: none;
+    padding:0;
+}
+#contact-us a{
+    color:white;
+    text-decoration: none;
+}
+.footer-widget{
+    color:white;
+}
+.footer-widget h4{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size:20px;
+}
+.footer-widget p{
+    line-height:26px;
+    margin-top:26px;
+    font-size:14px;
+}
+.footer-link{
+   margin-top:20px;
+   font-size:14px;
+}
+.footer-link li{
+    line-height: 36px;
+    cursor:pointer;
+}
+.footer-link li a{
+    transition: 0.4s;
+}
+#contact-us a:hover{
+    color:#F9676B;
+}
+.footer-social-icons{
+    list-style: none;
+    display: flex;
+    color:#898989;
+    margin-top:25px;
+    padding:0;
+}
+.footer-social-icons li{
+    margin-left:10px;
+    margin-right:10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.footer-social-icons li:hover {
+    color:#F9676B;
+}

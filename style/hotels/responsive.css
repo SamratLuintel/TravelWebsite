@@ -1,0 +1,33 @@
+
+
+@media (max-width:992px){
+    #navigation-menu{
+        display: none;
+    }
+    #open-slider{
+        display: block;
+    }
+    #service-wrapper{
+        height:500px;
+    }
+}
+
+@media (max-width:778px){
+    .header{
+        height:100px;
+        padding-top:40px;
+    }
+    .header-top{
+        display: none;
+    }
+    #header-line{
+        display: none;
+    }
+}
+
+
+@media (max-width:500px){
+    #service-wrapper{
+        background-position: 40% 5px;
+    }
+}
