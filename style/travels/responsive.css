@@ -34,6 +34,10 @@
     #information-area{
         flex-direction: column;
     }
+    #information-area .list-payment .payment-right-item{
+        flex-direction: row;
+        text-align: left;
+    }
     #information-area .two-column{
         max-width:100%;
         flex-basis: 100%;
