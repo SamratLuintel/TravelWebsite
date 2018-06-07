@@ -235,6 +235,7 @@ a .fa-chevron-down{
 
 #top-deals .deal-card{
     box-shadow: 0 0 10px rgba(0,0,0,.1);
+    margin-bottom:20px;
 }
 #top-deals .deal-card .image-wrapper{
     overflow: hidden;
@@ -281,10 +282,14 @@ a .fa-chevron-down{
     padding-left: 35px;
 }
 
+
+
+
 /* Customer Tickets */
 #customer-tickets{
     background-color: #F1F1F1;
     min-height:400px;
+    padding-top:60px;
 }
 
 #customer-tickets .section-heading .head-text{
@@ -309,6 +314,7 @@ a .fa-chevron-down{
 
 #customer-tickets .ticket-container{
     display: flex;
+    flex-direction: row;
     background-color: #FFFFFF;
     min-height:120px;
     margin-bottom:20px;
@@ -323,7 +329,7 @@ a .fa-chevron-down{
 }
 
 #customer-tickets .ticket-image img{
-    align-self: center;
+    align-self: flex-start;
 }
 
 #customer-tickets .ticket-content{
@@ -362,12 +368,10 @@ a .fa-chevron-down{
     min-height:400px;
     background: url('../../photos/bg/parallax_1.jpg');
     background-size:cover;
+    padding-top:5%;
     position: relative;
 }
 
-#choose-us .row{
-    margin-top:7%;
-}
 #choose-us .choose-container{
     text-align: center;
     color:#fff;

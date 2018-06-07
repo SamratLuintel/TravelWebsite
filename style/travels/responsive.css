@@ -23,3 +23,23 @@
         display: none;
     }
 }
+
+@media (max-width:500px){
+    #customer-tickets .ticket-container{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:800px){
+    #information-area{
+        flex-direction: column;
+    }
+    #information-area .two-column{
+        max-width:100%;
+        flex-basis: 100%;
+    }
+    #information-area .necessary-information{
+        justify-content: flex-start;
+    }
+    
+}
