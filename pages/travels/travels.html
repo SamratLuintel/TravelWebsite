@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../libraries/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../style/travels/style.css">
+    <link rel="stylesheet" href="../../style/travels/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+     <!--Side Navigation Menu on mobile screens -->
+     <ul id="side-menu" class="side-nav d-flex flex-column">
+            <li class="align-self-end">
+                <a href="#" class="btn-close" onclick="CloseSlideMenu()">&times;</a>
+            </li>
+            <li class="my-1">
+                <a href="#">HOME</a>
+            </li>
+            <li class="my-1">
+                <a href="#">TOUR</a>
+            </li>
+            <li class="my-1">
+                <a href="#">HOTELS</a>
+            </li>
+            <li class="my-1">
+                <p data-scrolldown="0" class="d-flex justify-content-between m-0">PACKAGES
+                    <i class="fas fa-chevron-down mt-1"></i>
+                </p>
+                <ul class="d-flex flex-column hide" data-scrolldownUl="0">
+                    <li>
+                        <a href="">Japan</a>
+                    </li>
+                    <li>
+                        <a href="">Asia</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="my-1">
+                <p data-scrolldown="1" class="d-flex justify-content-between m-0">PAGES
+                    <i class="fas fa-chevron-down mt-1"></i>
+                </p>
+                <ul class="d-flex flex-column hide" data-scrolldownUl="1">
+                    <li>
+                        <a href="">Japan</a>
+                    </li>
+                    <li>
+                        <a href="">Asia</a>
+                    </li>
+                </ul>
+            </li>
+    
+            <a href="#">Hotels
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </ul>
+    
+    
+    
+        <!-- Header Area -->
+        <div class="header">
+            <div class="container">
+                <div class="header-top">
+                    <div class="row justify-content-between separator">
+                        <div class="contact-us-section">
+                            <div class="call-to-action">
+                                <span>Contact Us</span>
+                                :
+                                <i class="fas fa-phone"></i> +9999587801 (Sunday - Friday : 9:00am - 5:00pm)
+                            </div>
+                        </div>
+                        <div class="social-section d-flex justify-content-end">
+                            <div class="social-icons">
+                                <ul>
+                                    <li>
+                                        <i class="fab fa-facebook-f"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-twitter"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-pinterest"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="account ml-3">
+                                ACCOUNT
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="main-area">
+                    <div class="row d-flex justify-content-between mt-md-4">
+                        <div class="brand-area">
+                            <div class="brand">
+                                <div class="brand-name">
+                                    MountainTravel
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar-area">
+                            <div class="basic-menu d-flex justify-content-end">
+                                <div id="navigation-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tour</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Hotels</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Packages
+                                                <i class="fas fa-chevron-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+                                                <li class="subOption">
+                                                    <a href="">SUBMENU 1</a>
+                                                </li>
+                                                <li class="subOption">
+                                                    <a href="">SUBMENU 2</a>
+                                                </li>
+                                                <li class="subOption">
+                                                    <a href="">SUBMENU 3</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">Pages
+                                                <i class="fas fa-chevron-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+                                                <li class="subOption">
+                                                    <a href="">About</a>
+                                                </li>
+                                                <li class="subOption">
+                                                    <a href="">Contact</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span id="open-slider">
+                                    <i class="fas fa-bars" onclick="OpenSlideMenu()"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    
+        <!-- Banner Container -->
+        <section id="banner-container">
+            <div class="bg-overlay-4">
+                <div class="main-content">
+                    <p class="caption-text">
+                        SEARCH YOUR DESTINATION
+                    </p>
+                    <h2 class="head-text">
+                        Book Our Super Cheap Plane Tickets
+                    </h2>
+                    <div class="button mt-5">
+                        LEARN MORE
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Deals -->
+        <section id="top-deals">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="head-text">TODAY'S TOP DEALS
+                            <span class="icon">
+                                <img src="../../photos/icon/man_walking.png" alt="">
+                            </span>
+                        </h3>               
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid mt-5">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="deal-card">
+                            <div class="image-wrapper">
+                                <img src="../../photos/flights/top_deal_1.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    FLAT 15% CASHBACK ON DOMESTIC FLIGGHTS FOR HDFC BANK CREDIT CARD USERS
+                                </h4>
+                                <p class="card-subtitle text-muted">
+                                    Coupon Code: #453AHSW12
+                                </p>
+                                <div class="view-more">
+                                    View More <span><i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="deal-card">
+                            <div class="image-wrapper">
+                                <img src="../../photos/flights/top_deal_2.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                   UP TO RS.12000 OFF ON PACKAGES AND CRAZY DISCOUNTS ON OTHER POPUALR DESTINATION
+                                </h4>
+                                <p class="card-subtitle text-muted">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing.  
+                                </p>
+                                <div class="view-more">
+                                    View More
+                                    <span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="deal-card">
+                            <div class="image-wrapper">
+                                <img src="../../photos/flights/top_deal_3.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    UPTO 30% WITH YETI AIR
+                                </h4>
+                                <p class="card-subtitle text-muted">
+                                    Book on Yeti plane flight to any destination you like with your mastercard and save big.You can save upto 30%
+                                </p>
+                                <div class="view-more">
+                                    View More
+                                    <span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="deal-card">
+                            <div class="image-wrapper">
+                                <img src="../../photos/flights/top_deal_4.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    WIN 2 AIRTICKETS WITH HIMALAYA AIRTICKETS
+                                </h4>
+                                <p class="card-subtitle text-muted">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt vero debitis earum. Asperiores.
+                                </p>
+                                <div class="view-more">
+                                    View More
+                                    <span>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Tickets -->
+        <section id="customer-tickets">
+            <div class="container">
+                <div class="section-heading">
+                    <h3 class="head-text">
+                        CUSTOMER BUYING TICKETS AT TICKET.COM
+                        <span class="icon">
+                            <img src="../../photos/icon/man_walking.png" alt="">
+                        </span>
+                    </h3>
+                </div>
+                <div class="row mt-5">
+
+                    <div class="col-md-6">
+                        <div class="ticket-container">
+                            <div class="ticket-image">
+                                <img src="../../photos/flights/logo_1.png" alt="">
+                            </div>
+                            <div class="ticket-content">
+                                <h4 class="ticket-title">
+                                    YOU BOOK 2 AIR TICKER HA NOI, YETI, HIMAL AND BOUDHA AND  GAME
+                                </h4>
+                                <div class="meta">
+                                    <p class="ticket-date text-muted">
+                                        March 29, 2018
+                                    </p>
+                                    <p class="price">
+                                        Price:$450.00
+                                    </p>
+                                </div>
+                          
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="ticket-container">
+                            <div class="ticket-image">
+                                <img src="../../photos/flights/logo_2.png" alt="">
+                            </div>
+                            <div class="ticket-content">
+                                <h4 class="ticket-title">
+                                    YOU BOOK 2 AIR TICKER HA NOI, YETI, HIMAL AND BOUDHA AND GAME
+                                </h4>
+                                <div class="meta">
+                                    <p class="ticket-date text-muted">
+                                        March 29, 2018
+                                    </p>
+                                    <p class="price">
+                                        Price:$450.00
+                                    </p>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="ticket-container">
+                            <div class="ticket-image">
+                                <img src="../../photos/flights/logo_2.png" alt="">
+                            </div>
+                            <div class="ticket-content">
+                                <h4 class="ticket-title">
+                                    YOU BOOK 2 AIR TICKER HA NOI, YETI, HIMAL AND BOUDHA AND GAME
+                                </h4>
+                                <div class="meta">
+                                    <p class="ticket-date text-muted">
+                                        March 29, 2018
+                                    </p>
+                                    <p class="price">
+                                        Price:$450.00
+                                    </p>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="ticket-container">
+                            <div class="ticket-image">
+                                <img src="../../photos/flights/logo_2.png" alt="">
+                            </div>
+                            <div class="ticket-content">
+                                <h4 class="ticket-title">
+                                    YOU BOOK 2 AIR TICKER HA NOI, YETI, HIMAL AND BOUDHA AND GAME
+                                </h4>
+                                <div class="meta">
+                                    <p class="ticket-date text-muted">
+                                        March 29, 2018
+                                    </p>
+                                    <p class="price">
+                                        Price:$450.00
+                                    </p>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Choose Us -->
+        <section id="choose-us">
+            <div class="bg-overlay-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="choose-container">
+                            <div class="image-choose">
+                                <img src="../../photos/flights/choose_us_1.jpg" alt="">
+                                <span>01</span>
+                            </div>
+                            <div class="choose-content">
+                                <h6>BEST PRICE GUARANTEE</h6>
+                                <p class="caption-text">
+                                    Official ticket agent. No refund, ticket renewal
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="choose-container">
+                            <div class="image-choose">
+                                <img src="../../photos/flights/choose_us_2.jpg" alt="">
+                                <span>02</span>
+                            </div>
+                            <div class="choose-content">
+                                <h6>PLEASE FLIGHT FLIGHT TICKET</h6>
+                                <p class="caption-text">
+                                    Convenient payment and very safe intelligent booking system.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="choose-container">
+                            <div class="image-choose">
+                                <img src="../../photos/flights/choose_us_3.jpg" alt="">
+                                <span>03</span>
+                            </div>
+                            <div class="choose-content">
+                                <h6>CUSTOMER CARE 24/7</h6>
+                                <p class="caption-text">
+                                    Cheap Domestic Fligts, International Cheap Flights.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="choose-container">
+                            <div class="image-choose">
+                                <img src="../../photos/flights/choose_us_4.jpg" alt="">
+                                <span>04</span>
+                            </div>
+                            <div class="choose-content">
+                                <h6>THOUGHTFUL SERVICE</h6>
+                                <p class="caption-text">
+                                    Support Free Support Related Information
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Information Area -->
+
+        <section id="information-area">
+            <div class="two-column necessary-information">
+                <div class="information-wrapper">
+                    <div class="section-heading">
+                        <h3 class="head-text">
+                            NECESSARY INFORMATION 
+                            <span class="icon">
+                                <img src="../../photos/icon/man_walking.png" alt="">
+                            </span>
+                        </h3>
+                        <ul class="information-list">
+                            <li><i class="fas fa-question"></i>Passengers who travel on airplanes require a pref-flight medical certificate.In any case. they are not allowed to fly</li>
+                            <li><i class="fas fa-question"></i>Guide to distinguish real ticket tickets fake after booking and payment has been completed</li>
+                            <li><i class="fas fa-question"></i>Lost tickets, how to handle</li>
+                            <li><i class="fas fa-question"></i>Carrying items may not carry carry-on luggage when boarding an aircraft</li>
+                            <li><i class="fas fa-question"></i>Airlines have airport shuttles and fees</li>
+                            <li><i class="fas fa-question"></i>Bus routes go from downtown to Ho Chi Minh City to tan Son Nhat Airport and vice versa</li>
+                            <li><i class="fas fa-question"></i>The bus routes go from central Hanoi to Nai Bai airport and vice versa</li>
+                            <li><i class="fas fa-question"></i>The items are not carry checked baggage when boarding the aircraft</li>
+                            <li><i class="fas fa-question"></i>Flight tickets for the elderly and disabled</li>
+                            <!-- <li><i class="fas fa-question"></i>Bring the plaited food to the plane</li>
+                            <li><i class="fas fa-question"></i>Ticket prices for children, the elderly and persons with disabilities are applicable</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="two-column">
+                <div class="payment-safery">
+                    <div class="section-heading">
+                        <h3 class="head-text">
+                            EASY PAYMENT - SAFERY 
+                            <span class="icon">
+                                <img src="../../photos/icon/man_walking.png" alt="">
+                            </span>
+                        </h3>
+                    </div>
+                    <ul class="list-payment">
+                        <li class="payment-left-item">
+                            <div class="image-wrapper">
+                                <img src="../../photos/flights/payment_1.png" alt="">
+                            </div>
+                            <div class="content-wrapper">
+                                <h6 class="head-text">
+                                    PAYMENT CASH AT THE OFFICE
+                                </h6>
+                                <p class="caption-text text-muted">
+                                    After successful order, please go through the ticket office. Exactly to pay and receive tickets. Alteration in some form, by injected humour, words which don't look.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="payment-right-item">
+                            <div class="image-wrapper">
+                                <img src="../../photos/flights/payment_2.png" alt="">
+                            </div>
+                            <div class="content-wrapper">
+                                <h6 class="head-text">
+                                    ONLINE PAYMENT (CAN)
+                                </h6>
+                                <p class="caption-text text-muted">
+                                    You can pay immediately (online). Payment at the box office, payment at your address, Payment by bank transfer
+                                </p>
+                            </div>
+                        </li>
+                        <li class="payment-left-item">
+                            <div class="image-wrapper">
+                                <img src="../../photos/flights/payment_3.png" alt="">
+                            </div>
+                            <div class="content-wrapper">
+                                <h6 class="head-text">
+                                    PAYMENT AT THE ADDRESS YOU REQUEST
+                                </h6>
+                                <p class="caption-text text-muted">
+                                    Staff Exactly will deliver tickets & collect money at home by the address you provide. Dolor ullamco laboris but the majority have suffered.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="payment-right-item">
+                            <div class="image-wrapper">
+                                <img src="../../photos/flights/payment_4.png" alt="">
+                            </div>
+                            <div class="content-wrapper">
+                                <h6 class="head-text">
+                                    PAYMENT BY TRANSFER
+                                </h6>
+                                <p class="caption-text text-muted">
+                                        You can pay by direct transfer at bank, transfer via ATM card, or via Internet banking. Consectetur adipisicing elit, sed do eiusmod tempor incididunt labore.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-us">
+                <div class="footer-top-area">
+                    <div class="bg-overlay-3"></div>
+                    <div class="container mt-5 pt-5">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="footer-widget">
+                                    <h4>Contact Us</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt illo nobis
+                                    </p>
+                                    <ul class="footer-social-icons">
+                                        <li>
+                                            <i class="fab fa-facebook-f"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fab fa-google-plus-g"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fab fa-twitter"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fab fa-pinterest"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="footer-widget">
+                                    <h4>NEWS</h4>
+                                    <ul class="footer-link">
+                                        <li>
+                                            <a href="#">Subscriptions</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">New Apps</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Download Now</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="footer-widget">
+                                    <h4>COMPANY</h4>
+                                    <ul class="footer-link">
+                                        <li>
+                                            <a href="#">Screenshot</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Features</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Price</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="footer-widget">
+                                    <h4>RESOURCES</h4>
+                                    <ul class="footer-link">
+                                        <li>
+                                            <a href="#">Support</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Privacy Terms</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <script src="../../scripts/travels/app.js"></script>
+</body>
+</html>
